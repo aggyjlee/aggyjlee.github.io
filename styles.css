@@ -38,13 +38,13 @@ nav {
 /* hero */
 
 .hero{
-    /* margin-top: 10vh; */
+    /* margin-top: 20vh; */
     width: 100vw;
     height:80vh;
 }
 
 .hero-hed{
-    margin-top: 150px;
+    margin-top: 225px;
     margin-left: 100px;
     font-size: 80px;
 }
@@ -228,8 +228,8 @@ nav {
 .other-work-grid{
     display: grid;
     /* border: 2px solid red; */
-    grid-template-columns: 450px 450px 450px;
-    grid-template-rows: 580px 580px;
+    grid-template-columns: 545px 545px 545px;
+    grid-template-rows: 580px 580px 580px;
 }
 
 .other-proj-subtitle{
@@ -241,6 +241,7 @@ nav {
 }
 
 .other-proj-hed {
+    width: 240px;
     margin-top: -1vh;
 }
 
@@ -324,7 +325,7 @@ nav {
 
 .about {
     width: 100vw;
-    height: 75vh;
+    height: 70vh;
     /* background-color: blue; */
 }
 
@@ -434,7 +435,7 @@ i {
 }
 
 .about-hero-hed{
-    margin-top: 150px;
+    margin-top: 225px;
     margin-left: 100px;
     margin-bottom: 60px;
     font-size: 80px;
@@ -532,7 +533,7 @@ i {
     background-color: #F7E797;
     color: black;
     padding: 18px;
-    width: 98%;
+    width: 90%;
     border: none;
     text-align: left;
     outline: none;
@@ -546,7 +547,7 @@ i {
   }
 
   .education{
-      height: 180vh;
+      height: 155vh;
   }
 
   .class-list {
@@ -589,7 +590,7 @@ i {
 }
 
 .experience {
-    height: 250vh;
+    height: 220vh;
 }
 
 
@@ -624,12 +625,20 @@ i {
 /* page template */
 .page-hero{
     display: flex;
-    height: 100vh;
+    margin-top: 10vh;
+    height: 90vh;
+    border: 2px solid blue;
 }
 .page-hero-hed{
     margin-left: 100px;
     font-size: 80px;
     width: 600px;
+}
+
+.page-hero-text-container{
+    border: 2px solid orange;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .page-hero-para{
@@ -668,7 +677,7 @@ i {
 }
 
 .page-subtitle-2 {
-    margin-top: 170px;
+    /* margin-top: 170px; */
     margin-left: 100px;
     margin-bottom: -50px;
 }
@@ -811,7 +820,7 @@ i {
 .page-content-text-container{
     /* border: 2px solid red; */
     margin-top: -100px;
-    margin-left: -400px;
+    margin-left: -650px;
     width: 800px;
     height: 300px;
     line-height: 1.5rem;
