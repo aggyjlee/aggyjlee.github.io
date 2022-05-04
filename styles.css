@@ -222,7 +222,7 @@ nav {
 /* other work */
 .other-work {
     width: 100vw;
-    height: 315vh;
+    height: 300vh;
 }
 
 .other-work-grid{
@@ -367,6 +367,10 @@ nav {
 
 .about-hed {
     margin-top:-8px;
+}
+
+.thrifties_link{
+    margin-bottom: 80px;
 }
 
 /* footer */
@@ -700,6 +704,12 @@ i {
     /* background-color: blue; */
 }
 
+.thrifties-page-content {
+    width: 100vw;
+    height: 175vh;
+    /* background-color: blue; */
+}
+
 .digital-page-content {
     width: 100vw;
     height: 80vh;
@@ -714,13 +724,19 @@ i {
 
 .knight-page-content {
     width: 100vw;
-    height: 140vh;
+    height: 120vh;
     /* background-color: blue; */
 }
 
 .md-page-content {
     width: 100vw;
     height: 180vh;
+    /* background-color: blue; */
+}
+
+.ww-page-content {
+    width: 100vw;
+    height: 190vh;
     /* background-color: blue; */
 }
 
@@ -755,11 +771,11 @@ i {
 
 .page-content-container{
     width: 100vw;
-    height:60vh;
+    /* height:60vh; */
     border: 2px solid red;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .digital-content-container{
@@ -776,7 +792,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -300px;
+    margin-top: 50px;
 }
 
 
@@ -810,28 +826,24 @@ i {
 
 .uxpage-content-container{
     width: 100vw;
-    height:50vh;
     border: 2px solid red;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .page-content-text-container{
     /* border: 2px solid red; */
-    margin-top: -100px;
-    margin-left: -650px;
+    margin-left: 100px;
     width: 800px;
-    height: 300px;
+    /* height: 300px; */
     line-height: 1.5rem;
 }
 
 .print-content-text-container{
     /* border: 2px solid red; */
-    margin-top: -100px;
-    margin-left: -50px;
+    /* margin-top: -100px; */
+    margin-left: 100px;
     width: 500px;
-    height: 300px;
     line-height: 1.5rem;
 }
 
@@ -860,10 +872,33 @@ i {
     display: flex;
 }
 
+.thrifties-content-image-container{
+    border: 2px solid orange;
+    width: 1160px;
+    margin: auto;
+    display: flex;
+}
+
+.smm-page-content-image-container{
+    border: 2px solid orange;
+    width: 1160px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+}
+
+.smm-page-2-content-image-container{
+    border: 2px solid orange;
+    width: 1160px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+}
+
 
 .md-page-content-image-container{
     border: 2px solid orange;
-    margin-top: -100px;
+    margin-top: 300px;
     width: 1160px;
     height: 800px;
     margin: auto;
@@ -886,7 +921,7 @@ i {
     width: 1160px;
     height: 300px;
     margin: auto;
-    margin-top: -150px;
+    margin-top: 50px;
     display: flex;
 }
 
@@ -905,7 +940,7 @@ i {
     height: 300px;
     margin: auto;
     display: flex;
-    margin-top: -150px;
+    margin-top: 90px;
 }
 
 #content-break {
@@ -935,27 +970,20 @@ i {
     margin: auto;
 }
 
-.collage-smm-img{
-    width: 400px;
-    object-fit: contain;
-    margin: auto;
-    margin-top: -200px;
-}
-
+.collage-smm-img, 
 .collage-smm-2-img{
     width: 400px;
     object-fit: contain;
     margin: auto;
-    margin-top: -120px;
+    margin-top: 50px;
 }
-
 
 .collage-smm-3-img{
     width: 500px;
     height: 400px;
     object-fit: fill;
     margin: auto;
-    margin-top: -160px;
+    margin-top: -50px;
 }
 
 
@@ -1005,14 +1033,15 @@ i {
 }
 
 .page-content-four-image-container{
-    border: 2px solid orange;
+    border: 2px solid pink;
     width: 1160px;
-    height: 500px;
+    /* height: 500px; */
     margin-top: 20px;
     display: grid;
     grid-template-columns: 500px 500px;
     grid-template-rows: 300px;
     grid-gap: 50px;
+    margin: auto;
 }
 
 .videopage-content-four-image-container{
@@ -1083,11 +1112,11 @@ i {
 
 .smm_image_caption{
     width: 1160px;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     position: absolute;
     margin: auto;
     text-align:center;
-    margin-top: 230px;
+    margin-top: 500px;
 }
 
 .smm_image_caption_2{
@@ -1096,7 +1125,7 @@ i {
     position: absolute;
     margin: auto;
     text-align:center;
-    margin-top: 310px;
+    margin-top: 500px;
 }
 
 .smm_post_1{
