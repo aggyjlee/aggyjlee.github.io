@@ -253,13 +253,13 @@ nav {
 /* other work */
 .other-work {
     width: 100vw;
-    height: 280vh;
+    height: 320vh;
 }
 
 .other-work-grid{
     display: grid;
     /* border: 2px solid red; */
-    grid-template-columns: 545px 545px 545px;
+    grid-template-columns: 450px 450px 450px;
     grid-template-rows: 580px 580px 580px;
 }
 
@@ -470,7 +470,7 @@ i {
 }
 
 .about-hero-hed{
-    margin-top: 225px;
+    margin-top: 190px;
     margin-left: 100px;
     margin-bottom: 60px;
     font-size: 80px;
@@ -582,7 +582,7 @@ i {
   }
 
   .education{
-      height: 150vh;
+      height: 170vh;
   }
 
   .class-list {
@@ -625,7 +625,7 @@ i {
 }
 
 .experience {
-    height: 220vh;
+    height: 250vh;
 }
 
 
@@ -733,19 +733,19 @@ i {
 
 .parking-page-content {
     width: 100vw;
-    height: 245vh;
+    height: 270vh;
     /* background-color: blue; */
 }
 
 .dataviz-page-content {
     width: 100vw;
-    height: 210vh;
+    height: 230vh;
     /* background-color: blue; */
 }
 
 .sfc-page-content {
     width: 100vw;
-    height: 200vh;
+    height: 220vh;
     /* background-color: blue; */
 }
 
@@ -757,7 +757,7 @@ i {
 
 .thrifties-page-content {
     width: 100vw;
-    height: 150vh;
+    height: 170vh;
     /* background-color: blue; */
 }
 
@@ -769,55 +769,55 @@ i {
 
 .print-page-content {
     width: 100vw;
-    height: 95vh;
+    height: 105vh;
     /* background-color: blue; */
 }
 
 .knight-page-content {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     /* background-color: blue; */
 }
 
 .md-page-content {
     width: 100vw;
-    height: 155vh;
+    height: 170vh;
     /* background-color: blue; */
 }
 
 .ww-page-content {
     width: 100vw;
-    height: 160vh;
+    height: 180vh;
     /* background-color: blue; */
 }
 
 .smm-page-content {
     width: 100vw;
-    height: 340vh;
+    height: 380vh;
     /* background-color: blue; */
 }
 
 .video-page-content {
     width: 100vw;
-    height: 320vh;
+    height: 325vh;
     /* background-color: blue; */
 }
 
 .ux-page-content {
     width: 100vw;
-    height: 125vh;
+    height: 145vh;
     /* background-color: blue; */
 }
 
 .ppt-page-content {
     width: 100vw;
-    height: 180vh;
+    height: 195vh;
     /* background-color: blue; */
 }
 
 .pbsds-page-content{
     width: 100vw;
-    height: 160vh;
+    height: 180vh;
 }
 
 .page-content-container{
@@ -1295,8 +1295,8 @@ iframe:nth-child(1) {
 
 
 .slide img {
-    width: 800px;
-    margin-left: 150px;
+    width: 600px;
+    margin-left: 80px;
 }
 
 /* page buttons */
