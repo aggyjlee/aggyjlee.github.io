@@ -253,7 +253,7 @@ nav {
 /* other work */
 .other-work {
     width: 100vw;
-    height: 310vh;
+    height: 280vh;
 }
 
 .other-work-grid{
@@ -568,7 +568,7 @@ i {
     background-color: #F7E797;
     color: black;
     padding: 18px;
-    width: 90%;
+    width: 98%;
     border: none;
     text-align: left;
     outline: none;
@@ -582,7 +582,7 @@ i {
   }
 
   .education{
-      height: 180vh;
+      height: 150vh;
   }
 
   .class-list {
@@ -625,7 +625,7 @@ i {
 }
 
 .experience {
-    height: 250vh;
+    height: 220vh;
 }
 
 
@@ -733,19 +733,19 @@ i {
 
 .parking-page-content {
     width: 100vw;
-    height: 275vh;
+    height: 245vh;
     /* background-color: blue; */
 }
 
 .dataviz-page-content {
     width: 100vw;
-    height: 240vh;
+    height: 210vh;
     /* background-color: blue; */
 }
 
 .sfc-page-content {
     width: 100vw;
-    height: 230vh;
+    height: 200vh;
     /* background-color: blue; */
 }
 
@@ -757,67 +757,67 @@ i {
 
 .thrifties-page-content {
     width: 100vw;
-    height: 175vh;
+    height: 150vh;
     /* background-color: blue; */
 }
 
 .digital-page-content {
     width: 100vw;
-    height: 80vh;
+    height: 95vh;
     /* background-color: blue; */
 }
 
 .print-page-content {
     width: 100vw;
-    height: 110vh;
+    height: 95vh;
     /* background-color: blue; */
 }
 
 .knight-page-content {
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     /* background-color: blue; */
 }
 
 .md-page-content {
     width: 100vw;
-    height: 165vh;
+    height: 155vh;
     /* background-color: blue; */
 }
 
 .ww-page-content {
     width: 100vw;
-    height: 190vh;
+    height: 160vh;
     /* background-color: blue; */
 }
 
 .smm-page-content {
     width: 100vw;
-    height: 390vh;
+    height: 340vh;
     /* background-color: blue; */
 }
 
 .video-page-content {
     width: 100vw;
-    height: 345vh;
+    height: 320vh;
     /* background-color: blue; */
 }
 
 .ux-page-content {
     width: 100vw;
-    height: 140vh;
+    height: 125vh;
     /* background-color: blue; */
 }
 
 .ppt-page-content {
     width: 100vw;
-    height: 200vh;
+    height: 180vh;
     /* background-color: blue; */
 }
 
 .pbsds-page-content{
     width: 100vw;
-    height: 180vh;
+    height: 160vh;
 }
 
 .page-content-container{
@@ -872,7 +872,7 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -100px;
+    margin-top: -30vh;
 }
 
 .uxpage-content-container{
@@ -1032,6 +1032,7 @@ i {
     border-radius: 8px;
     object-fit: contain;
     margin: auto;
+    margin-top: 40px;
 }
 
 .collage-warriors-img{
@@ -1125,7 +1126,7 @@ i {
 }
 
 .page-content-four-image-container{
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     width: 1160px;
     /* height: 500px; */
     margin-top: 20px;
@@ -1153,7 +1154,7 @@ i {
     height: 800px;
     display: flex;
     margin: auto;
-    margin-left: 90px;
+    margin-left: 13vw;
 }
 
 .collage-four-img{
@@ -1218,7 +1219,7 @@ i {
     z-index:-1;
     margin: auto;
     text-align:center;
-    margin-top: 325px;
+    margin-top: 375px;
 }
 
 .parking_image_caption_2{
@@ -1294,7 +1295,7 @@ iframe:nth-child(1) {
 
 
 .slide img {
-    width: 500px;
+    width: 800px;
     margin-left: 150px;
 }
 
