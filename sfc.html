@@ -22,10 +22,12 @@
 
     <!-- nav bar -->
         <nav>
-            <p class="nav-text"><a href="index.html" class="nav-link"> home</a></p>
-            <p class="nav-text"><a href="index.html#featured-proj" class="nav-link"> portfolio</a></p>
-            <p class="nav-text"><a href="index.html#about" class="nav-link">about</a></p>
-            <p class="nav-text"><a href="images/AgnesJLee_Resume.pdf" class="nav-link">resume</a></p>
+            <h1 class="nav-text"><a href="index.html" class="nav-link">✨</a></h1>
+            <div class="nav-right">
+                <p class="nav-right-text"><a href="index.html#featured-proj" class="nav-link">portfolio</a></p>
+                <p class="nav-right-text"><a href="index.html#about" class="nav-link">about</a></p>
+                <p class="nav-right-text"><a href="images/AgnesJLee_Resume.pdf" class="nav-link">resume</a></p>
+            </div>
         </nav>
 
     <!-- hero section-->
@@ -33,7 +35,12 @@
             <div class="page-hero-text-container">
                 <p class="page-subtitle-2">✨ San Francisco Chronicle</p>
                 <h1 class="page-hero-hed"><a href="#content-break" class="proj-link">Warriors Big 3 Interactive</a></h1>
-                <p class="page-hero-para">text text text text text text text text text text text text text text text text text text text text text</p>
+                <p class="page-hero-para">An interactive that displays the Warriors' performance based on which Big 3 players played in their 2021-2022 season.</p>
+            </div>
+
+            <div class="page-hero-img-container">
+                <img src="images/laptop.png" class="page-hero-img" />
+                <!-- <img src="images/big3.mov" class="page-hero-img" /> -->
             </div>
 
         </div>
@@ -43,30 +50,22 @@
         
 
     <!-- content section-->
-        <div class="page-content" id="content">
+        <div class="sfc-page-content" id="content">
             <h1 class="other-hed">🙂 overview</h1>
             <div class="page-content-container">
                 <div class="page-content-text-container">
-                    <p>text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
+                    <p>
+                        For the first few weeks of my internship at the San Francisco Chronicle,
+                        I mainly focused on working through a React tutorial to familiarize myself
+                        with the language. On top of doing so, my manager, Alex Fong, encouraged me to think 
+                        about the stories I'd like to work on during my internship. 
                     </p>
-                    <p>text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                    </p>
-                    <p>text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
+                    <p>
+                        As I was fresh out of leaving the Bay Area, I thought back to how much I wanted 
+                        to go to more Warriors games while I was there and asked Alex if there was an available
+                        story about the Warriors. He connected me with the sports designer and editor, who
+                        had already been talking about a story that would evaluatethe unique season since the Big 3 players had not
+                        played many consecutive games altogether due to injuries. From then on, we scheduled meetings and got to work.
                     </p>
                 </div>
             </div>
@@ -75,36 +74,35 @@
             <h1 class="page-hed">🙂 process</h1>
             <div class="page-content-container">
                 <div class="page-content-text-container">
-                    <p>text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
+                    <p>
+                        To begin, Alex shared an initial sketch of a wireframe that would have the headshots
+                        of the players fade in and out by game. However, I thought there might be too much 
+                        content on screen if we had to show all 82 games of the regular season, so I began
+                        to ideate on a wireframe that would best display the various combinations of the players 
+                        with their general performance.
                     </p>
-                    <p>text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
+                    <p>
+                        I felt that displaying each game would take up too much space on the page and give a more
+                        detailed look at the season than we needed. Warner, the sports designer who was also helping
+                        with reporting on the story, compiled statistics, with net rating being the most telling 
+                        of a combination's performance.
+
                     </p>
-                    <p>text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
+                    <p>
+                        I drew up four different ideas, with two of them being heavily inspired by the rough sketches
+                        Alex and Warner had drawn up along with two of my own. After talking with Alex, we discussed using 
+                        a scroll effect to pass through player visualizations and datasets. With the wireframe finished, I 
+                        used an available SFC template to begin developing the story and implemented code customizations as needed.
                     </p>
                 </div>
             </div>
 
 
             <div class="page-content-container">
-                <div class="page-content-image-container">
-                    <img src="images/placeholder.jpg" class="collage-page-hero-img" />
-                    <img src="images/placeholder.jpg" class="collage-page-hero-img" />
-                    <img src="images/placeholder.jpg" class="collage-page-hero-img" />
+                <div class="dataviz-content-image-container">
+                    <img src="images/laptop.png" class="collage-warriors-img" />
+                    <p class="dataviz_image_caption"><i>Initial Figma wireframes following meetings with Alex & Warner</i></p>
+                    <!-- <img src="images/laptop.png" class="collage-warriors-img" /> -->
                 </div>
             </div>
 
@@ -113,27 +111,19 @@
             <h1 class="page-hed">🙂 outcome</h1>
             <div class="page-content-container">
                 <div class="page-content-text-container">
-                    <p>text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
+                    <p>
+                        As it was my first published piece at the Chronicle, there were many confusing 
+                        moments along the way. I had to apply what I learned about React very quickly, 
+                        and I saw firsthand how the Chronicle used their various content management systems
+                        to create their stories. At first, I felt very intimidated and out of my comfort zone, 
+                        but I slowly began to enjoy the process and was encouraged that I was finally doing work
+                        I was interested in and felt inspired by! It was a great learning experience that showed
+                        me there is so much more to learn in the world of digital storytelling.
                     </p>
-                    <p>text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                    </p>
-                    <p>text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                        text text text text text text text text text text text text text text text
-                    </p>
+
+                    <h2 class="thrifties_link">
+                        read the story <a href="https://www.sfchronicle.com/projects/2022/warriors-big-3-stats/" class="proj-link" target="_blank">here</a>!
+                    </h2>
                 </div>
             </div>
 
@@ -143,8 +133,8 @@
 
         <!-- prev & next-->
         <div class="page-buttons">
-            <h2 class="prev">prev: <a href="/" class="proj-link">blabla</a></h2>
-            <h2 class="next">next: <a href="/" class="proj-link">blabla</a></h2>
+            <h2 class="prev">prev: <a href="index.html" class="proj-link">home</a></h2>
+            <h2 class="next">next: <a href="dataviz.html" class="proj-link">data visualization</a></h2>
         </div>
 
 
