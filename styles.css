@@ -13,6 +13,7 @@ nav {
     box-shadow: 0px 4px 10px 2px rgba(208, 207, 207, 0.25);
     display: flex;
     align-items: center;
+    z-index: 10;
     /* justify-content: flex-end; */
 }
 
@@ -73,18 +74,18 @@ nav {
 
 .hero-hed{
     margin-top: 225px;
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 80px;
 }
 
 .hero-text{
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 25px;
 }
 
-.hero-prompt{
+.hero-prompt1{
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 25px;
 }
 
@@ -163,6 +164,7 @@ nav {
 .proj-img{
     width: 35vw;
     height: 40vh;
+    margin-left: 24px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 13px 11px 18px rgba(0, 0, 0, 0.1);
@@ -401,7 +403,8 @@ nav {
 }
 
 .thrifties_link{
-    margin-bottom: 80px;
+    margin-top: 4vh;
+    /* margin-bottom: 80px; */
 }
 
 /* footer */
@@ -749,6 +752,18 @@ i {
     /* background-color: blue; */
 }
 
+.wine-page-content {
+    width: 100vw;
+    height: 188vh;
+    /* background-color: blue; */
+}
+
+.ggcc-page-content {
+    width: 100vw;
+    height: 245vh;
+    /* background-color: blue; */
+}
+
 .simple-page-content {
     width: 100vw;
     height: 200vh;
@@ -821,6 +836,15 @@ i {
 }
 
 .page-content-container{
+    width: 100vw;
+    /* height:60vh; */
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.print-page-content-container{
     width: 100vw;
     /* height:60vh; */
     /* border: 2px solid red; */
@@ -923,6 +947,24 @@ i {
     display: flex;
 }
 
+.wine-content-image-container{
+    /* border: 2px solid orange; */
+    margin-top: -100px;
+    width: 1160px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+}
+
+.ggcc-content-image-container{
+    /* border: 2px solid orange; */
+    margin-top: -300px;
+    width: 1160px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+}
+
 .sfc-content-image-container{
     /* border: 2px solid orange; */
     margin-top: -100px;
@@ -953,6 +995,7 @@ i {
     /* border: 2px solid orange; */
     width: 1160px;
     margin: auto;
+    margin-top: 8vh;
     display: flex;
 }
 
@@ -1033,6 +1076,23 @@ i {
     object-fit: contain;
     margin: auto;
     margin-top: 40px;
+}
+
+.collage-wine-img {
+    height: 400px;
+    object-fit: contain;
+    margin: auto;
+}
+
+
+
+.collage-ggcc-img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -100px;
 }
 
 .collage-warriors-img{
@@ -1228,7 +1288,8 @@ i {
     position: absolute;
     margin: auto;
     text-align:center;
-    margin-top: 530px;
+    margin-top: 550px;
+    z-index: -1;
 }
 
 .dataviz_image_caption{
@@ -1268,7 +1329,7 @@ i {
     position: absolute;
     margin: auto;
     text-align:center;
-    margin-top: 210px;
+    margin-top: 425px;
 }
 
 .thrifties_image_caption{
@@ -1316,4 +1377,286 @@ iframe:nth-child(1) {
 
 .next {
     margin-left: auto;
+    margin-right: -40px;
+}
+
+
+/* Media Queries */
+
+/* iPhone SE */
+@media (min-width: 370px) and (max-width: 575px){
+    nav {
+        width: 100%;
+    }
+
+    .page-buttons {
+        margin-left: 80px;
+    }
+
+    .hero {
+        width: 250vw;
+    }
+
+    span {
+        margin: 5px;
+    }
+
+    .proj-subtitle {
+        margin-bottom: 30px;
+    }
+
+    .proj-hed {
+        margin-bottom: 50px;
+    }
+
+    .featured-proj, .featured-proj-2, .featured-proj-3 {
+        width: 400vw;
+    }
+
+    .featured-proj-container, .featured-proj-container-2, .featured-proj-container-3 {
+        width: 320vw;
+    }
+
+    .featured-proj-text-container {
+        width: 150vw;
+    }
+
+    .featured-proj-image-container {
+        width: 100vw;
+    }
+
+    .warriors-proj-img, .proj-img {
+        width: 100vw;
+        height: none;
+        margin-left: -50px;
+    }
+
+    .other-work-grid {
+        grid-template-rows: 480px 480px 480px;
+    }
+
+    .other-proj-img, .ppt-proj-img, 
+    .knight-proj-img, .ww-proj-img,
+    .ux-proj-img, .md-proj-img {
+        width: 65vw;
+    }
+
+    .other-proj-text-container {
+        width: 65vw;
+    }
+
+    .about-container {
+        width: 400vw;
+    }
+
+    .footer {
+        width: 400vw;
+    }
+
+    .about {
+        height: 80vh;
+    }
+
+    .about-hero {
+        width: 400vw;
+    }
+
+    .about-hero-hed {
+        margin-bottom: none;
+    }
+
+    .about-hero-img-container {
+        width: none;
+        height: 200px;
+    }
+
+    .experience {
+        height: 300vh;
+        margin-top: 10vh;
+    }
+
+    .exp-text-container {
+        width: 380vw;
+    }
+
+    /* .exp-resume-prompt {
+        margin-bottom: 10vh;
+    } */
+
+    .education {
+        height: 220vh;
+    }
+
+    .edu-proj-hed{
+        margin-top: -8px;
+
+    }
+
+    .edu-proj-text-container {
+        width: 380vw;
+    }
+
+    .edu-proj-container {
+        width: 340vw;
+    }
+
+    .portfolio-content-container {
+        width: 400vw;
+        margin-bottom: 10vh;
+    }
+
+    .sfc-page-content {
+        width: 400vw;
+        height: 260vh;
+    }
+
+    .page-content-container {
+        width: 400vw;
+    }
+
+    .dataviz-page-content {
+        height: 268vh;
+    }
+
+    .page-buttons {
+        width: 350vw;
+        margin-top: -10vh;
+    }
+
+    .parking-page-content {
+        height: 310vh;
+    }
+
+    .pbsds-page-content {
+        height: 253vh;
+    }
+    
+    .pbsds-content-four-image-container {
+        margin: auto;
+    }
+
+    .collage-pbsds-img {
+        margin-top: 300px;
+    }
+
+    .thrifties-page-content {
+        height: 254vh;
+    }
+
+    .collage-thrifties-img {
+        margin-top: 200px;
+    }
+
+    .thrifties_image_caption {
+        margin-top: 765px;
+    }
+
+    .ww-page-content {
+        height: 254vh;
+    }
+
+    .page-content-ww-container {
+        height: 1340px;
+    }
+
+    .ww_image_caption {
+        margin-top: 465px;
+    }
+
+    .ux-page-content {
+        height: 254vh;
+    }
+
+    .uxpage-content-container {
+        width: 400vw;
+    }
+
+    .uxpage-content-image-container {
+        height: 1000px;
+    }
+
+    .collage-ux-img:nth-child(2) {
+        margin: auto;
+    }
+
+    .video-page-content {
+        height: 385vh;
+    }    
+
+    .videopage-four-content-container {
+        width: 400vw;
+        height: 175vh;
+    }
+
+    .print-page-content {
+        height: 253vh;
+    }
+
+    .print-page-content-container, .digital-content-container {
+        width: 400vw;
+        align-items: center;
+        display: block;
+    }
+    
+    #slideshow-example {
+        margin-top: 40vh;
+    }
+
+    .slide img {
+        width: 1000px;
+        margin-left: 0;
+    }
+
+    .print-content-text-container, .digital-content-text-container {
+        width: 900px;
+    }
+
+    .digital-page-content {
+        height: 253vh;
+    }
+
+    .knight-page-content { 
+        height: 254vh;
+    }
+
+    .knight-page-content .page-content-image-container {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    } 
+
+    .knight-page-content h2 {
+        margin-top: 20vh;
+    }
+    
+    .md-page-content {
+        height: 253vh;
+    }
+
+    .md-page-content-container {
+        width: 400vw;
+        margin-top: 100px;
+    }
+
+    .ppt-page-content {
+        height: 254vh;
+    }
+
+    .smm-page-content{
+        height: 430vh;
+    }
+
+    .smmaddition-page-content-container{
+        width: 400vw;
+    }
+    .smmaddition-page-content-text-container {
+        margin-left: 100px;
+    }
+
+    .wine-page-content {
+        height: 253vh;
+    }
+
+    .ggcc-page-content {
+        height: 280vh;
+    }
 }
