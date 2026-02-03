@@ -4,7 +4,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const navArray = [
   ["work", "/#project"],
-   ["about", "/about"],
+  //  ["about", "/About"],
   ["resume", "/AgnesJLee_Resume_2026.pdf"],
 ];
 

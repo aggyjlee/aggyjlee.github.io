@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Topper from "./components/Topper";
@@ -12,11 +13,12 @@ function App() {
   return (
     <div>
       <NavBar />
-      {/* <Main />
- App */}
-      <Topper />
-      <ProjectGrid id={"project"} />
+      <Main />
       <Footer />
+      {/* <Topper />
+      <ProjectGrid id={"project"} />
+         <About />
+      <Footer /> */}
     </div>
   );
 }

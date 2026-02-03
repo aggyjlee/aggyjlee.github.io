@@ -1,8 +1,10 @@
+import { MainWrapper } from "./index.stitches";
+
 
 function About() {
   return (
     <div>
-      hi
+      <MainWrapper></MainWrapper>
     </div>
   );
 }

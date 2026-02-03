@@ -12,10 +12,9 @@ import FirstPager from "./FirstPager";
 function Main() {
   return (
     <main>
-        Main
       <Routes>
-        <Route exact path="/" component={FirstPager} />
-        <Route path='/about' component={About}/>
+        <Route exact path="/" element={<FirstPager />} />
+        <Route path='/about' element={<About />}/>
       </Routes>
     </main>
   );

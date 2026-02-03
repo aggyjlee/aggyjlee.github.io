@@ -14,7 +14,6 @@ const FirstPager = () =>
     <div>
       <Topper />
       <ProjectGrid id={"project"} />
-      <Footer />
     </div>
   )
 
