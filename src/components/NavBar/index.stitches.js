@@ -3,7 +3,6 @@ import { styled } from "@stitches/react";
 export const StickyWrapper = styled("div", {
   position: "sticky",
   top: "0",
-  height: "100%",
   zIndex: "1",
   backgroundColor: 'white'
 });

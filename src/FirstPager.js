@@ -1,3 +1,4 @@
+import React from 'react'
 import logo from "./logo.svg";
 import "./App.css";
 import NavBar from "./components/NavBar";
@@ -8,17 +9,13 @@ import "@fontsource/source-serif-4";
 import About from "./components/About";
 import Main from './Main'
 
-function App() {
-  return (
+const FirstPager = () => 
+   (
     <div>
-      <NavBar />
-      {/* <Main />
- App */}
       <Topper />
       <ProjectGrid id={"project"} />
       <Footer />
     </div>
-  );
-}
+  )
 
-export default App;
+export default FirstPager

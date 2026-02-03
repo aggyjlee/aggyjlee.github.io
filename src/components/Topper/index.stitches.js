@@ -13,12 +13,15 @@ export const MainWrapper = styled("div", {
 export const ContentWrapper = styled("div", {
 //   border: "2px solid purple",
   maxWidth: "42rem",
+    position: 'relative',
+  top: '-50px'
 });
 
 export const HedWrapper = styled("div", {
   display: "flex",
 //   border: "2px solid pink",
-  marginBottom: '1.5rem'
+  marginBottom: '1.5rem',
+
 });
 
 export const PhotoFrame = styled("div", {
