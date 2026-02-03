@@ -21,7 +21,14 @@ export const ContentWrapper = styled("div", {
 export const LinkWrapper = styled("div", {
   display: "flex",
   gap: "3rem",
-  p: {
+  alignItems:"center",
+  a: {
+    fontFamily: "Helvetica Neue",
     textTransform: "uppercase",
+    color: '#000',
+    letterSpacing: '1px',
+    "&:hover": {
+      color: '#006894'
+    }
   },
 });

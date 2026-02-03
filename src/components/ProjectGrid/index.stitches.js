@@ -54,6 +54,10 @@ export const ProjectContentWrapper = styled("div", {
     paddingBottom: "1rem",
     fontWeight: "normal",
   },
+  a: {
+    textDecoration: 'none',
+    width: 'fit-content'
+  }
 });
 
 export const Button = styled("div", {

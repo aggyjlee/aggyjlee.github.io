@@ -2,55 +2,64 @@
   [
     "VA’s disability program is an ‘honor system.’ These veterans are defrauding it.",
     "https://www.washingtonpost.com/investigations/interactive/2025/veterans-affairs-fraud-fake-disability-cases/",
-    "Design & development",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "Design & development, UX Design",
+    "This story belongs to a four-part series of a year-long investigation series about fraud in Veterans Affairs. I worked with another designer to establish a design system, iterated on wireframes and mockups, pitched new components like the annotated video component and led development on all four stories.",
+    "hardfraud.jpg"
   ],
   [
-    "How six of America’s oldest restaurants have endured through the decades",
+    "A taste of America’s oldest restaurants",
     "link",
     "Design & development",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "In collaboration with another designer, we worked on mockups to best create a digestible story that allowed readers to opt in to specific restaurants; I built the digital story while the other designer focused on the print section.",
+    "oldestrestos.jpg"
   ],
   [
     "Exploring the American frontier",
     "https://www.washingtonpost.com/nation/interactive/2025/american-west-frontier-transformation/",
-    "Design & development",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "Design & development, UX Design",
+    "A unique photo story pitched by one of the Post's staff photographers, I refactored the template's photo flow component and pitched features to display as many original photographs as possible.",
+    "shiftingfrontiers.jpg"
   ],
   [
     "Enduring Images of 2025",
     "https://www.washingtonpost.com/nation/interactive/2025/pictures-of-the-year-2025/",
     "Development, UX Design",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "In response to the newsroom's desire to create more mobile-friendly photo edits, I worked on developing a new mobile feature for the Year In Photos package that cropped in on photos as a default yet allowed users to view full-width photos based on user interaction.",
+    "yip2025.jpg"
   ],
   [
     "Alone in a bathroom: The fear and uncertainty of a post-Roe medication abortion",
-    "link",
+    "https://www.washingtonpost.com/politics/interactive/2024/abortion-pill-experience-stories/",
     "Design & development",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "Due to the sensitive nature of the story topic, I created an immersive topper that spoke to the subject's experience without relying on photographs, as we didn't have a standout visual for the top. I continued the treatment from the topper to downpage elements like section headers.",
+    "abortionpills.jpg"
   ],
   [
     "He was sentenced to death four decades ago. He’s still there, waiting.",
     "https://www.washingtonpost.com/nation/interactive/2024/death-row-inmates-us-executions/",
     "Design & development",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "A story that focused on a big-picture issue through the lens of one inmate on death row. In order to speak to both of these ideas, I developed a strong, narrative topper and created the design system of this piece.",
+    "deathrow.jpg"
   ],
   [
     "How Florida is getting its pink back",
-    "link",
+    "https://www.washingtonpost.com/nation/interactive/2024/florida-flamingo-idalia-hurricane-everglades/",
     "Design & development",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "A particularly vibrant piece that allowed me to play with color, immersive visuals and the glamour of being a beloved figure in the state of Florida.",
+    "floridaflamingos.jpg"
   ],
   [
     "America’s epidemic of chronic illness is killing us too soon",
-    "link",
+    "https://www.washingtonpost.com/health/interactive/2023/american-life-expectancy-dropping/",
     "Design & development",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "This story belongs to a seven-part investigative series in which I collaborated with two other designers and Graphics to create the design system and develop the various features.",
+    "lifeexpectancy.jpg"
   ],
   [
     "Beyond King Charles: Your guide to the world’s 28 other monarchs",
-    "link",
+    "https://www.washingtonpost.com/world/interactive/2023/monarchies-around-world/",
     "Design & development",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "Pubbed the morning of King Charles' coronation, I led the visual direction and created the graphics for the piece as the main designer and developer of this quick-turn project.",
+    "globalmonarchies.jpg"
   ]
 ]

@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const linkArray = [
-    ["Github", "link"],
-     ["Email", "link"],
-      ["Linkedin", "link"]
+    ["Github", "https://github.com/aggyjlee"],
+     ["Email", "mailto: agnesjihyunlee@gmail.com"],
+      ["LinkedIn", "https://linkedin.com/in/agnesjlee"]
 ]
 
 function Footer() {
@@ -18,7 +18,7 @@ function Footer() {
             {linkArray.map((item, i) => {
                 return (
                     <div key={i}>
-                        <p>{item[0]}</p>
+                        <a href={item[1]}>{item[0]}</a>
                     </div>
                 )
             })}
