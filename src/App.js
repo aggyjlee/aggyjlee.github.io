@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 
-import "./App.css";
 import NavBar from "./components/NavBar";
 import Topper from "./components/Topper";
 import ProjectGrid from "./components/ProjectGrid";

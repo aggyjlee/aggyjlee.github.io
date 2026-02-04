@@ -1,5 +1,6 @@
 import { styled } from "@stitches/react";
 
+
 export const MainWrapper = styled("div", {
   borderTop: "1px solid #006894",
   width: "calc(100% - 12rem)",

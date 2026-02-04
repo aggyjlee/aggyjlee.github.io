@@ -8,7 +8,7 @@ import Topper from "./components/Topper";
 import ProjectGrid from "./components/ProjectGrid";
 import reportWebVitals from "./reportWebVitals";
 import Footer from "./components/Footer";
-import "@fontsource/source-serif-4";
+import "@fontsource/playfair-display";
 import About from "./components/About";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
