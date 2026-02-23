@@ -10,10 +10,16 @@ export const MainWrapper = styled("div", {
 });
 
 export const ContentWrapper = styled("div", {
-  //   border: "2px solid pink",
-  width: "calc(100% - 12rem)",
+    // border: "2px solid pink",
   height: "100%",
+
+  "@media screen and (min-width: 768px)": {
   margin: "6rem",
+  width: "calc(100% - 12rem)",
+  },
+  '@media screen and (max-width: 767px)': {
+      width: "calc(100% - 2rem)",
+  }
 });
 
 export const ProjectModule = styled("div", {
@@ -22,6 +28,10 @@ export const ProjectModule = styled("div", {
   display: "grid",
   gridTemplateColumns: "40% 60%",
   marginBottom: "3rem",
+  '@media screen and (max-width: 767px)': {
+    display: 'flex',
+    flexDirection: 'column',
+  }
 });
 
 export const Image = styled("div", {
@@ -29,7 +39,7 @@ export const Image = styled("div", {
   borderRadius: "0.25rem",
   width: "auto",
   img: {
-    height: "100%",
+    height: "auto",
     width: "100%",
     borderRadius: "0.25rem",
     filter: "drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.05))",
@@ -37,7 +47,7 @@ export const Image = styled("div", {
 });
 
 export const ProjectContentWrapper = styled("div", {
-  marginLeft: "3rem",
+  // border: '2px solid red',
   display: "flex",
   flexDirection: "column",
   paddingTop: "0.25rem",
@@ -53,10 +63,19 @@ export const ProjectContentWrapper = styled("div", {
     margin: 0,
     paddingBottom: "1rem",
     fontWeight: "normal",
+    '@media screen and (max-width: 767px)': {
+      fontSize: '25px'
+    }   
   },
   a: {
     textDecoration: 'none',
     width: 'fit-content'
+  }, 
+  '@media screen and (min-width: 768px)':{
+  marginLeft: "3rem",
+  },
+  '@media screen and (max-width: 767px)':{
+  marginTop: "0.5rem",
   }
 });
 
@@ -79,6 +98,9 @@ export const Button = styled("div", {
     top: "4px",
     marginLeft: "0.25rem",
   },
+  '@media screen and (max-width: 767px)': {
+    marginBottom: '1.5rem'
+  },
 });
 
 export const Descriptor = styled("div", {
@@ -92,6 +114,9 @@ export const Descriptor = styled("div", {
   alignContent: "flex-end",
   flexWrap: "wrap",
   paddingBottom: "0.25rem",
+  '@media screen and (min-width: 768px) and (max-width: 1240px)': {
+    paddingTop: '1rem'
+  }
 });
 
 export const OtherWrapper = styled("div", {
@@ -104,6 +129,10 @@ export const OtherWrapper = styled("div", {
     paddingBottom: "1rem",
     fontWeight: "normal",
   },
+  '@media screen and (max-width: 767px)':{
+    marginTop: '4rem',
+    marginBottom: '2rem'
+  }
 });
 
 export const ListWrapper = styled("div", {

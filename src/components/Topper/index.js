@@ -23,8 +23,7 @@ const Topper = () => {
             </Headline>
           </HedWrapper>
           <Subheadline>
-            I am currently a D.C.-based Designer at The Washington Post, where I
-            design and develop interactive stories.
+            I am a multidisciplinary designer with experience in front-end development and digital design.
           </Subheadline>
         </ContentWrapper>
       </MainWrapper>

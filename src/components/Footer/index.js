@@ -13,7 +13,7 @@ function Footer() {
     <footer>
       <MainWrapper>
         <ContentWrapper>
-            <p>💙 Last Updated on Feb 2026</p>
+            <p>💙 Last Updated Feb 2026</p>
             <LinkWrapper>
             {linkArray.map((item, i) => {
                 return (

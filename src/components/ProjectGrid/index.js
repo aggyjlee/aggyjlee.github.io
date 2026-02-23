@@ -12,6 +12,7 @@ import {
 import data from "../../data/project.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom'
 
 function ProjectGrid() {
   return (
@@ -48,10 +49,14 @@ function ProjectGrid() {
         {/* <OtherWrapper>
           <h3>Other Work</h3>
           <ListWrapper>
+           
             <div>
+               <Link to="/print">
               <span>Print Design |</span> Washington Post
               <FontAwesomeIcon icon={faArrowRight} />
+               </Link>
             </div>
+           
             <div>
               <span>Art Direction & Illustration |</span> Washington Post,
               Stitch Magazine

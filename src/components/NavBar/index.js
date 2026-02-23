@@ -1,15 +1,14 @@
 import { StickyWrapper, MainWrapper, ContentWrapper, LinkWrapper } from "./index.stitches";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom'
 
 const navArray = [
   ["work", "/#project"],
-  //  ["about", "/about"],
-  ["resume", "/AgnesJLee_Resume_2026.pdf"],
+  ["about", "/about"],
 ];
 
 function NavBar() {
   return (
+    <nav>
     <StickyWrapper>
       <MainWrapper>
         <ContentWrapper>
@@ -18,14 +17,17 @@ function NavBar() {
             {navArray.map((item, i) => {
                 return (
                     <div key={i}>
-                        <a href={item[1]}>{item[0]}</a>
+                      <Link to={`${item[1]}`}>{item[0]}</Link>
+                        {/* <a href={item[1]}>{item[0]}</a> */}
                     </div>
                 )
             })}
+            <div><a href={'/AgnesJLee_Resume_2026.pdf'} target="_blank">resume</a> </div>
             </LinkWrapper>
         </ContentWrapper>
       </MainWrapper>
     </StickyWrapper>
+    </nav>
   );
 }
 

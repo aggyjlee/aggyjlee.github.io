@@ -3,9 +3,14 @@ import { styled } from "@stitches/react";
 
 export const MainWrapper = styled("div", {
   borderTop: "1px solid #006894",
-  width: "calc(100% - 12rem)",
   height: "100%",
   margin: "auto",
+  "@media screen and (min-width: 768px)": {
+  width: "calc(100% - 12rem)",
+  },
+  "@media screen and (max-width: 767px)": {
+  width: "calc(100% - 2rem)",
+  }
 });
 
 export const ContentWrapper = styled("div", {
@@ -17,6 +22,10 @@ export const ContentWrapper = styled("div", {
     textTransform: "capitalize",
     fontFamily: "Helvetica Neue",
   },
+  "@media screen and (max-width: 767px)": {
+  display: 'block',
+  textAlign: 'center'
+  }
 });
 
 export const LinkWrapper = styled("div", {
@@ -32,4 +41,8 @@ export const LinkWrapper = styled("div", {
       color: '#006894'
     }
   },
+   "@media screen and (max-width: 767px)": {
+    display: 'block',
+    justifyContent: 'space-between'
+   }
 });

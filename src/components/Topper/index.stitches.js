@@ -11,20 +11,27 @@ export const MainWrapper = styled("div", {
 });
 
 export const ContentWrapper = styled("div", {
-  //   border: "2px solid purple",
+  // border: "2px solid purple",
   maxWidth: "42rem",
   position: "relative",
   top: "-50px",
+  "@media screen and (max-width: 767px)": {
+    margin: "1rem",
+  },
 });
 
 export const HedWrapper = styled("div", {
-  display: "flex",
+
   // border: "2px solid pink",
-  marginBottom: "1.5rem",
+
+  "@media screen and (min-width: 768px)": {
+      display: "flex",
+    marginBottom: "1.5rem",
+  },
 });
 
 export const PhotoFrame = styled("div", {
-  //   border: "2px solid black",
+  // border: "2px solid black",
   alignSelf: "center",
   width: "15%",
   height: "100%",
@@ -32,6 +39,17 @@ export const PhotoFrame = styled("div", {
   img: {
     width: "100%",
     height: "100%",
+  },
+  "@media screen and (max-width: 767px)": {
+    width: "100%",
+    margin: "auto",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    img: {
+      width: "30%",
+      height: "30%",
+    },
   },
 });
 
@@ -44,6 +62,9 @@ export const Headline = styled("h1", {
     fontWeight: 400,
   },
   margin: "0",
+  "@media screen and (max-width: 767px)": {
+    fontSize: "55px",
+  },
 });
 
 export const Subheadline = styled("h2", {
@@ -51,6 +72,9 @@ export const Subheadline = styled("h2", {
   fontWeight: "normal",
   fontSize: "45px",
   margin: "0",
+  "@media screen and (max-width: 767px)": {
+    fontSize: "25px",
+  },
 });
 
 export const ScrollCTA = styled("div", {

@@ -13,10 +13,9 @@ import { Headline } from "../Topper/index.stitches";
 
 const aboutMeText = [
   "I am a digital designer who creates interactive experiences for both web and mobile platforms. I focus on creating design systems and features that best tell the individual story of each project while keeping user experience at the forefront.",
-  "Since September 2022, I have been working as a News Designer at The Washington Post. Here, I have worked both on print and digital, in addition to a sprinkle of illustration and art direction. I have designed for all daily sections of the newspaper, which include A Section, Style and Metro, and I also consistenly design the front page (A1).",
-  "With my experience in a newsroom, I am comfortable working across teams and tight deadlines in a fast-paced environment. I regularly collaborate with copy editors, assignment editors, photo editors, reporters, graphic reporters, illustrators and other designers, presenting my designs and assisting with creating an efficient workflow for long-term projects.",
-  // "I always say I am a designer because I am someone who loves to solve problems – whether it is bug bashing or creating the best reader experience, I see design as the most effective way to convey your message and story.",
-  "Outside of work, you can find me tutoring, crocheting, trying recipes, grocery shopping, exploring new spots in DC and Northern Virginia and carrying around my iPad.",
+  "For the past four years, I worked as a News Designer at The Washington Post. There, I worked both on print and digital, in addition to a sprinkle of illustration and art direction. I have designed for all daily sections of the newspaper, which include A Section, Style and Metro, and I also consistenly design the front page (A1).",
+  "With my experience in a newsroom, I am comfortable working across teams and under tight deadlines in a fast-paced environment. I regularly collaborate with copy editors, assignment editors, photo editors, reporters, graphics and illustrators to present designs and assist with creating an efficient workflow for long-term projects.",
+  "Outside of work, you can find me tutoring, crocheting, trying out recipes, grocery shopping, exploring new spots in DC and Northern Virginia and carrying around my iPad.",
 ];
 
 const aboutModText = [
@@ -46,11 +45,13 @@ function FrontHalf() {
             </AboutMeText>
             <ThirdColWrapper>
               <AboutMod>
-                <span>Current faves:</span>
+                {/* <span>Current faves:</span> */}
                 <div>
-                  {aboutModText.map((item, i) => {
+                  The stamp logo for my website is a play on the "참 잘했어요 (Good Job)!" stamp used in Korean elementary schools.
+                  Make sure to click the projects that have this stamp to learn more about what gave it the stamp of approval!
+                  {/* {aboutModText.map((item, i) => {
                     return <div key={i}>{item}</div>;
-                  })}
+                  })} */}
                 </div>
               </AboutMod>
               <ModNote>
