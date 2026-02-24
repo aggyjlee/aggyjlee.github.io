@@ -9,8 +9,19 @@ export const StickyWrapper = styled("div", {
 
 export const MainWrapper = styled("div", {});
 
+export const PhotoFrame = styled("div", {
+  paddingLeft: '2rem',
+
+  img: {
+    width: '75px',
+    height: 'auto',
+    position: 'absolute',
+    top: '1rem',
+    transform: 'rotate(-20deg)',
+  }
+});
+
 export const ContentWrapper = styled("div", {
-  // backgroundColor: 'pink',
   paddingTop: "1rem",
   paddingBottom: "1rem",
   display: "flex",

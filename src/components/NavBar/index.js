@@ -1,32 +1,45 @@
-import { StickyWrapper, MainWrapper, ContentWrapper, LinkWrapper } from "./index.stitches";
-import { Link } from 'react-router-dom'
+import {
+  StickyWrapper,
+  MainWrapper,
+  ContentWrapper,
+  LinkWrapper,
+  PhotoFrame,
+} from "./index.stitches";
+import { Link } from "react-router-dom";
 
 const navArray = [
-  ["work", "/#project"],
+  ["case studies", "/case-studies"],
+    // ["work", "/#project"],
   ["about", "/about"],
+  ["contact", "/contact"],
 ];
 
 function NavBar() {
   return (
     <nav>
-    <StickyWrapper>
-      <MainWrapper>
-        <ContentWrapper>
+      <StickyWrapper>
+        <MainWrapper>
+          <Link to={"/"}>
+            <PhotoFrame>
+              <img src="/stamp.png" alt="aggy-dojang" className='stamp-rotation' />
+            </PhotoFrame>
+          </Link>
 
-           <LinkWrapper>
-            {navArray.map((item, i) => {
+          <ContentWrapper>
+            <LinkWrapper>
+              {navArray.map((item, i) => {
                 return (
-                    <div key={i}>
-                      <Link to={`${item[1]}`}>{item[0]}</Link>
-                        {/* <a href={item[1]}>{item[0]}</a> */}
-                    </div>
-                )
-            })}
-            <div><a href={'/AgnesJLee_Resume_2026.pdf'} target="_blank">resume</a> </div>
+                  <div key={i}>
+                    <Link to={`${item[1]}`}>{item[0]}</Link>
+                    {/* <a href={item[1]}>{item[0]}</a> */}
+                  </div>
+                );
+              })}
+              {/* <div><a href={'/AgnesJLee_Resume_2026.pdf'} target="_blank">resume</a> </div> */}
             </LinkWrapper>
-        </ContentWrapper>
-      </MainWrapper>
-    </StickyWrapper>
+          </ContentWrapper>
+        </MainWrapper>
+      </StickyWrapper>
     </nav>
   );
 }

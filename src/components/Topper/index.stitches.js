@@ -26,7 +26,7 @@ export const HedWrapper = styled("div", {
 
   "@media screen and (min-width: 768px)": {
       display: "flex",
-    marginBottom: "1.5rem",
+    // marginBottom: "1.5rem",
   },
 });
 
@@ -72,6 +72,13 @@ export const Subheadline = styled("h2", {
   fontWeight: "normal",
   fontSize: "45px",
   margin: "0",
+  a: {
+    color: '#000',
+    "&:hover": {
+      color: '#006894',
+      fontStyle: 'italic'
+    }
+  },
   "@media screen and (max-width: 767px)": {
     fontSize: "25px",
   },
@@ -79,6 +86,9 @@ export const Subheadline = styled("h2", {
 
 export const ScrollCTA = styled("div", {
   //   border: "2px solid blue",
+  a: {
+    color: '#000',
+    textDecoration: 'none',
   position: "absolute",
   top: "auto",
   bottom: "0",
@@ -94,4 +104,5 @@ export const ScrollCTA = styled("div", {
   svg: {
     paddingTop: "0.5rem",
   },
+  }
 });

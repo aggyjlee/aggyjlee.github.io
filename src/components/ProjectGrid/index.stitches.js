@@ -132,6 +132,14 @@ export const OtherWrapper = styled("div", {
   '@media screen and (max-width: 767px)':{
     marginTop: '4rem',
     marginBottom: '2rem'
+  },
+  div: {
+    a: {
+      color: 'black',
+       "&:hover": {
+      color: '#006894',
+    }
+    }
   }
 });
 

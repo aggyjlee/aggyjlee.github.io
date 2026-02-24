@@ -10,7 +10,8 @@ export const MainWrapper = styled("div", {
 });
 
 export const ContentWrapper = styled("div", {
-  // border: "2px solid pink",
+  border: "2px solid pink",
+  height: '100vh',
 
   "@media screen and (min-width: 768px)": {
     margin: "6rem",
@@ -27,7 +28,7 @@ export const TopWrapper = styled("div", {
   gridTemplateColumns: "70% 30%",
   h3: {
     color: '#006894',
-   fontSize: "40px",
+    fontSize: "40px",
     margin: 0,
     fontWeight: "normal",
     "@media screen and (max-width: 767px)": {
@@ -39,12 +40,7 @@ export const TopWrapper = styled("div", {
   }
 });
 
-export const ContentBlock = styled("div", {
-  // border: '2px solid green',
-  height: 'auto',
-  marginTop: '1.5rem',
-  display: 'grid',
-  gap: '1rem',
-  // flexDirection: 'column',
-  gridTemplateColumns: 'repeat(3, 1fr)'
+export const ProjectTOC = styled("div", {
+    border: '2px solid green',
+    marginTop: '1.5rem',
 })
