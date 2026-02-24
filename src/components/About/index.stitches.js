@@ -33,6 +33,17 @@ export const AboutMeText = styled("div", {
   gridColumn: "3 / span 2",
   "> div": {
     marginBottom: "1rem",
+    a: {
+      color: "#006894",
+      fontWeight: 'bold'
+    }
+  },
+    svg: {
+    transform: "rotate(-0.12turn)",
+    fill: "#006894",
+    path: {
+      fill: "#006894",
+    },
   },
 });
 
@@ -50,6 +61,7 @@ export const AboutMod = styled("div", {
   display: "flex",
   flexDirection: "column",
   fontSize: "14px",
+  alignSelf: 'flex-end',
   span: {
     fontWeight: "bold",
     marginBottom: "0.5rem",

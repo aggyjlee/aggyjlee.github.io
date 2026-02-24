@@ -13,6 +13,7 @@ import data from "../../data/project.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom'
+import jump from 'jump.js'
 
 function ProjectGrid() {
   return (
@@ -46,7 +47,7 @@ function ProjectGrid() {
             </ProjectModule>
           );
         })}
-        {/* <OtherWrapper>
+        <OtherWrapper>
           <h3>Other Work</h3>
           <ListWrapper>
            
@@ -64,11 +65,11 @@ function ProjectGrid() {
             </div>
             <div>
               <span>Media Design |</span> Video Producing & Editing, Social
-              Media Design, Mobile App Protyping
+              Media Design, Mobile App Prototyping, Presentation Design
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </ListWrapper>
-        </OtherWrapper> */}
+        </OtherWrapper>
       </ContentWrapper>
     </MainWrapper>
   );
