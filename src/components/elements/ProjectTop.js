@@ -6,6 +6,12 @@ function ProjectTop({ hed, overview, date, role, button, link, marginBottom, css
     // border: '2px solid red',
     display: "grid",
     gridTemplateColumns: "70% 30%",
+          "& a": {
+        color: "#006894"
+      },
+      "& a:hover": {
+        color: "#4f7c8f",
+      },
     h3: {
       color: "#006894",
       fontSize: "40px",
@@ -32,8 +38,16 @@ function ProjectTop({ hed, overview, date, role, button, link, marginBottom, css
       'p:nth-child(2)': {
         fontWeight: "bold",
       },
+
     },
+    '@media screen and (max-width: 767px)': {
+      display: 'block'
+    }
   });
+
+   const TopPara = styled.p({
+
+   }) 
 
   return (
     <TopWrapper style={{marginBottom: `${marginBottom || '4rem'}` }}>
@@ -43,7 +57,7 @@ function ProjectTop({ hed, overview, date, role, button, link, marginBottom, css
         <p>{role}</p>
         {button ? <Button link={link} /> : ""}
       </div>
-      <p>{overview}</p>
+      <TopPara dangerouslySetInnerHTML={{__html: overview}}/>
     </TopWrapper>
   );
 }

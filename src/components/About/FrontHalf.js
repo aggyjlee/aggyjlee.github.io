@@ -1,6 +1,5 @@
 import {
-  MainWrapper,
-  ContentWrapper,
+  FrontHalfWrapper,
   AboutTextWrapper,
   AboutMeText,
   PhotoFrame,
@@ -31,7 +30,7 @@ const aboutModText = [
 
 function FrontHalf() {
   return (
-    <div>
+    <FrontHalfWrapper>
       <Headline>
         <span>Hi, I’m </span>Agnes Lee!
       </Headline>
@@ -57,17 +56,17 @@ function FrontHalf() {
             {/* <span>Current faves:</span> */}
             <div>
               The stamp logo for my website is a play on the "참 잘했어요 (Good
-              Job)!" stamp used in Korean elementary schools. Make sure to click
-              the projects that have this stamp to learn more about what gave it
-              the stamp of approval!
+              Job)!" stamp used in Korean elementary schools. 
               {/* {aboutModText.map((item, i) => {
                     return <div key={i}>{item}</div>;
-                  })} */}
+                  })} Make sure to click
+              the projects that have this stamp to learn more about what gave it
+              the stamp of approval! */}
             </div>
           </AboutMod>
         </ThirdColWrapper>
       </AboutTextWrapper>
-    </div>
+    </FrontHalfWrapper>
   );
 }
 

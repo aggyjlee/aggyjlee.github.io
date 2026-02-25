@@ -15,7 +15,7 @@ function Contact() {
           </div>
           <ul>
               <li>Email: <a href="mailto:agnesjihyunlee@gmail.com">agnesjihyunlee@gmail.com</a></li>
-              <li>LinkedIn: <a href="https://linkedin.com/in/agnesjlee">agnesjihyunlee</a></li>
+              <li>LinkedIn: <a href="https://linkedin.com/in/agnesjlee">Agnes Lee</a></li>
               <li>GitHub: <a href="https://github.com/aggyjlee">aggyjlee</a></li>
               <li>Twitter: <a href="https://twitter.com/aggylee">aggylee</a></li>
           </ul>

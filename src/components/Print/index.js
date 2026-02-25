@@ -48,7 +48,7 @@ function Print() {
             return (
               <img
                 src={`/print/${item}.jpg`}
-                alt="project thumbnail"
+                alt="thumbnail of print page"
                 key={i}
                 style={{
                   width: "100%",

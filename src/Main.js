@@ -1,10 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import logo from "./logo.svg";
-import NavBar from "./components/NavBar";
-import Topper from "./components/Topper";
-import ProjectGrid from "./components/ProjectGrid";
-
 import "@fontsource/source-serif-4";
 import About from "./components/About";
 import FirstPager from "./FirstPager";
@@ -13,6 +8,10 @@ import Print from "./components/Print";
 import MediaDesign from "./components/MediaDesign";
 import CaseStudies from "./components/CaseStudies";
 import Contact from "./components/Contact";
+import AbortionPills from "./components/projects/AbortionPills.js";
+import DeathRow from "./components/projects/DeathRow.js";
+import OldestRestos from "./components/projects/OldestRestos.js";
+import ShiftingFrontiers from "./components/projects/ShiftingFrontiers.js";
 
 function Main() {
   return (
@@ -24,6 +23,10 @@ function Main() {
         <Route path="/illos" element={<Illos />} />
         <Route path="/media-design" element={<MediaDesign />} />
         <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/pills-interactive" element={<AbortionPills />} />
+        <Route path="/oldest-restos" element={<OldestRestos />} />
+        <Route path="/shifting-frontiers" element={<ShiftingFrontiers />} />
+        <Route path="/dr-interactive" element={<DeathRow />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>

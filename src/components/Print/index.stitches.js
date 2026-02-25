@@ -18,33 +18,20 @@ export const ContentWrapper = styled("div", {
   },
   "@media screen and (max-width: 767px)": {
     width: "calc(100% - 2rem)",
+    margin: '4rem'
   },
 });
 
-export const TopWrapper = styled("div", {
-  // border: "2px solid blue",
-  display: "grid",
-  gridTemplateColumns: "70% 30%",
-  h3: {
-    color: '#006894',
-   fontSize: "40px",
-    margin: 0,
-    fontWeight: "normal",
-    "@media screen and (max-width: 767px)": {
-      fontSize: "25px",
-    },
-  },
-  p: {
-    fontFamily: 'Helvetica Neue'
-  }
-});
 
 export const ContentBlock = styled("div", {
   // border: '2px solid green',
   height: 'auto',
-  marginTop: '1.5rem',
+  // marginTop: '1.5rem',
   display: 'grid',
   gap: '1rem',
   // flexDirection: 'column',
-  gridTemplateColumns: 'repeat(3, 1fr)'
+  gridTemplateColumns: 'repeat(3, 1fr)',
+  "@media screen and (max-width: 767px)": {
+    gridTemplateColumns: 'repeat(2, 1fr)'
+  }
 })

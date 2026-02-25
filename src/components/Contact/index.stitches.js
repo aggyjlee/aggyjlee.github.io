@@ -37,6 +37,9 @@ export const ContentWrapper = styled("div", {
         fontWeight: 'bold',
         color: "#006894",
       },
+      "a:hover": {
+      color: "#4f7c8f",
+    },
     },
   },
 });

@@ -14,7 +14,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
 const navArray = [
-  ["case studies", "/case-studies"],
+  // ["case studies", "/case-studies"],
   // ["work", "/#project"],
   ["about", "/about"],
   ["contact", "/contact"],

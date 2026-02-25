@@ -59,16 +59,15 @@ function ProjectGrid() {
            
             <div>
               <Link to="/illos">
-              <span>Art Direction & Illustration |</span> Washington Post,
-              Stitch Magazine
+              <span>Illustration & Art Direction |</span> Washington Post
               <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </div>
-            <div>
+            {/* <div>
               <span>Media Design |</span> Video Producing & Editing, Social
               Media Design, Mobile App Prototyping, Presentation Design
               <FontAwesomeIcon icon={faArrowRight} />
-            </div>
+            </div> */}
           </ListWrapper>
         </OtherWrapper>
       </ContentWrapper>

@@ -9,13 +9,19 @@ export const MainWrapper = styled("div", {
 });
 
 export const ContentWrapper = styled("div", {
-
-    "@media screen and (min-width: 768px)": {
+  "@media screen and (min-width: 768px)": {
     margin: "6rem",
     width: "calc(100% - 12rem)",
   },
   "@media screen and (max-width: 767px)": {
     width: "calc(100% - 2rem)",
+    margin: "4rem",
+  },
+});
+
+export const FrontHalfWrapper = styled("div", {
+  h1: {
+    "@media screen and (max-width: 400px)": { maxWidth: "20rem" },
   },
 });
 
@@ -31,6 +37,11 @@ export const AboutTextWrapper = styled("div", {
   "> div:nth-child(3)": {
     gridColumn: "5 / span 1",
   },
+  "@media screen and (max-width: 767px)": {
+    display: "flex",
+    flexDirection: "column",
+    gap: "1.5rem",
+  },
 });
 
 export const AboutMeText = styled("div", {
@@ -40,10 +51,13 @@ export const AboutMeText = styled("div", {
     marginBottom: "1rem",
     a: {
       color: "#006894",
-      fontWeight: 'bold'
-    }
+      fontWeight: "bold",
+    },
+    "a:hover": {
+      color: "#4f7c8f",
+    },
   },
-    svg: {
+  svg: {
     transform: "rotate(-0.12turn)",
     fill: "#006894",
     path: {
@@ -53,20 +67,22 @@ export const AboutMeText = styled("div", {
 });
 
 export const PhotoFrame = styled("div", {
-  //   border: "2px solid black",
-  borderRadius: "6rem",
+  // border: "2px solid black",
+  // borderRadius: "6rem",
   img: {
     borderRadius: "1rem",
     width: "100%",
     height: "auto",
+  },
+  "@media screen and (max-width: 767px)": {
+    marginBottom: "0.5rem",
   },
 });
 
 export const AboutMod = styled("div", {
   display: "flex",
   flexDirection: "column",
-  fontSize: "14px",
-  alignSelf: 'flex-end',
+  alignSelf: "flex-end",
   span: {
     fontWeight: "bold",
     marginBottom: "0.5rem",
@@ -77,30 +93,38 @@ export const AboutMod = styled("div", {
 });
 
 export const ModNote = styled("div", {
-  fontStyle: "italic",
   span: {
     fontWeight: "bold",
   },
 });
 
 export const ThirdColWrapper = styled("div", {
-  paddingLeft: "1.5rem",
-  display: "grid",
   fontFamily: "Helvetica Neue",
   color: "#006894",
+  "@media screen and (min-width: 768px)": {
+    display: "grid",
+    paddingLeft: "1.5rem",
+  },
+  "@media screen and (max-width: 767px)": {
+    // marginTop: '1rem',
+    "& div:nth-child(2)": {
+      // border: '2px solid blue',
+      div: {
+        marginBottom: "0 !important",
+      },
+    },
+  },
 });
 
 export const ExpWrapper = styled("div", {
   border: "2px solid pink",
   marginTop: "5rem",
-  display: 'grid',
-  gridTemplateColumns: '65% 25%',
-  gap: '10%'
+  display: "grid",
+  gridTemplateColumns: "65% 25%",
+  gap: "10%",
 });
 
-export const FirstHalf = styled("div", {
-
-});
+export const FirstHalf = styled("div", {});
 
 export const Hed = styled("div", {
   fontSize: "45px",
