@@ -4,15 +4,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
- 
+
 a:-webkit-any-link {
-  color: '#fff !important'
+  color: "#fff !important";
 }
 
 .stamp-rotation:hover {
-
+  @media screen and (min-width: 768px) {
+    animation: spin 10s linear infinite;
+  }
   /* border: 2px solid red; */
-  animation: spin 10s linear infinite;
 }
 
 @keyframes spin {

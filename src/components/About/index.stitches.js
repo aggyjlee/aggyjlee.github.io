@@ -9,9 +9,14 @@ export const MainWrapper = styled("div", {
 });
 
 export const ContentWrapper = styled("div", {
-  width: "calc(100% - 12rem)",
-  height: "100%",
-  margin: "6rem",
+
+    "@media screen and (min-width: 768px)": {
+    margin: "6rem",
+    width: "calc(100% - 12rem)",
+  },
+  "@media screen and (max-width: 767px)": {
+    width: "calc(100% - 2rem)",
+  },
 });
 
 export const AboutTextWrapper = styled("div", {

@@ -22,23 +22,6 @@ export const ContentWrapper = styled("div", {
   },
 });
 
-export const TopWrapper = styled("div", {
-  // border: "2px solid blue",
-  display: "grid",
-  gridTemplateColumns: "70% 30%",
-  h3: {
-    color: '#006894',
-    fontSize: "40px",
-    margin: 0,
-    fontWeight: "normal",
-    "@media screen and (max-width: 767px)": {
-      fontSize: "25px",
-    },
-  },
-  p: {
-    fontFamily: 'Helvetica Neue'
-  }
-});
 
 export const ProjectTOC = styled("div", {
     border: '2px solid green',

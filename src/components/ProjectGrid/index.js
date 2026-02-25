@@ -34,7 +34,6 @@ function ProjectGrid() {
                   <Button onClick={() => console.log("go to link")}>
                     <p>
                         Link to story
-
                     </p>
                     <FontAwesomeIcon icon={faArrowRight} />
                   </Button>
@@ -59,9 +58,11 @@ function ProjectGrid() {
             </div>
            
             <div>
+              <Link to="/illos">
               <span>Art Direction & Illustration |</span> Washington Post,
               Stitch Magazine
               <FontAwesomeIcon icon={faArrowRight} />
+              </Link>
             </div>
             <div>
               <span>Media Design |</span> Video Producing & Editing, Social

@@ -4,6 +4,7 @@ import {
   TopWrapper,
   ContentBlock,
 } from "./index.stitches";
+import ProjectTop from "../elements/ProjectTop";
 
 function Print() {
   const printArray = [
@@ -26,7 +27,11 @@ function Print() {
   return (
     <MainWrapper>
       <ContentWrapper>
-        <TopWrapper>
+        <ProjectTop
+          hed="Print Design"
+          overview="At the Post, I regularly designed the Style, Metro and A sections. I was also one of a select group of designers who designed A1 on a consistent basis. These shifts called for close collaboration with photo and copy editors, in addition to applying feedback and quickly responding to breaking news under tight, nightly deadlines."
+        />
+        {/* <TopWrapper>
           <h3>Print Design</h3>
           <p>
             At the Post, I regularly designed the Style, Metro
@@ -36,7 +41,7 @@ function Print() {
             applying feedback and quickly responding to breaking news under
             tight, nightly deadlines.
           </p>
-        </TopWrapper>
+        </TopWrapper> */}
 
         <ContentBlock>
           {printArray.map((item, i) => {
@@ -45,7 +50,11 @@ function Print() {
                 src={`/print/${item}.jpg`}
                 alt="project thumbnail"
                 key={i}
-                style={{ width: "100%", height: "auto", border: '0.2px solid gray'}}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  border: "0.2px solid gray",
+                }}
               />
             );
           })}
