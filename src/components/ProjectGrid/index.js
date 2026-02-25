@@ -4,21 +4,42 @@ import {
   ProjectModule,
   Image,
   ProjectContentWrapper,
-  Button,
+  SecondaryButton,
   Descriptor,
   OtherWrapper,
   ListWrapper,
+  ProjectMessage,
+  Tooltip,
+  TooltipText,
+  ProjMsgDesktop
 } from "./index.stitches";
+import Button from "../elements/Button";
 import data from "../../data/project.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from 'react-router-dom'
-import jump from 'jump.js'
+import { faArrowRight, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { CiCircleInfo } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 function ProjectGrid() {
   return (
-    <MainWrapper id={'project'}>
+    <MainWrapper id={"project"}>
       <ContentWrapper>
+        <ProjectMessage>
+          <h3>Selected Work</h3>
+          <ProjMsgDesktop
+          >
+            <span>Whenever possible, gift links are provided. Getting a
+              paywall?{" "}</span>
+            <Tooltip>
+              <FontAwesomeIcon icon={faInfoCircle} />
+              <TooltipText>
+                <p>Gift log-in credentials</p>
+                <p>user:<span> ajlportfolio2026@gmail.com</span></p>
+                <p>pw: <span>viewmywork!</span></p>
+              </TooltipText>
+            </Tooltip>
+          </ProjMsgDesktop>
+        </ProjectMessage>
         {data.map((item, i) => {
           return (
             <ProjectModule key={i}>
@@ -30,37 +51,31 @@ function ProjectGrid() {
                   {i + 1}/{data.length}
                 </p>
                 <h3>{item[0]}</h3>
-                <a target="_blank" href={`${item[1]}`}>
-                  <Button onClick={() => console.log("go to link")}>
-                    <p>
-                        Link to story
-                    </p>
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </Button>
-                </a>
+
+                <Button link={item[1]} />
                 <Descriptor>
                   <span>{item[2] + " |"}</span>
                   {" " + item[3]}
                 </Descriptor>
               </ProjectContentWrapper>
+              {/* <ProjectMessage><BsExclamationCircle /><p>When possible, gift links are provided.</p></ProjectMessage> */}
             </ProjectModule>
           );
         })}
         <OtherWrapper>
           <h3>Other Work</h3>
           <ListWrapper>
-           
             <div>
-               <Link to="/print">
-              <span>Print Design |</span> Washington Post
-              <FontAwesomeIcon icon={faArrowRight} />
-               </Link>
+              <Link to="/print">
+                <span>Print Design |</span> Washington Post
+                <FontAwesomeIcon icon={faArrowRight} />
+              </Link>
             </div>
-           
+
             <div>
               <Link to="/illos">
-              <span>Illustration & Art Direction |</span> Washington Post
-              <FontAwesomeIcon icon={faArrowRight} />
+                <span>Illustration & Art Direction |</span> Washington Post
+                <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </div>
             {/* <div>

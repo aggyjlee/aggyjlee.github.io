@@ -19,7 +19,7 @@ export const ContentWrapper = styled("div", {
   display: "flex",
   justifyContent: "space-between",
   p: {
-    textTransform: "capitalize",
+    // textTransform: "uppercase",
     fontFamily: "Helvetica Neue",
   },
   "@media screen and (max-width: 767px)": {

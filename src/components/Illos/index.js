@@ -47,7 +47,7 @@ function Illos() {
     <MainWrapper>
       <ContentWrapper>
         <ProjectTop
-          hed="Illustrations"
+          hed="Illustration"
           overview="I have experience creating photo illustrations, ranging from editorial illustrations to quick turn illustrations for the Washington Post Brights app. I've also assisted with art direction for digital projects, as shown in <a href='https://www.washingtonpost.com/investigations/interactive/2025/veterans-affairs-disability-claims-fraud/'>this topper illustration</a> and <a href='https://www.washingtonpost.com/health/interactive/2023/stress-chronic-illness-aging/'> these animated illustrations</a>."
         />
         <ContentBlock>
