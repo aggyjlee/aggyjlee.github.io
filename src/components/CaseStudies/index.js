@@ -17,7 +17,7 @@ function CaseStudies() {
           hed="Case Studies"
           overview="Throughout my career, I have grown comfortable with simultanously balancing various responsibilties: front-end developer, UX designer and project manager – to name just a few. For select projects, here are case studies that go into more detail about my roles and design processes."
         />
-        {/* <ProjectTOC>
+        <ProjectTOC>
           <div>
             <ul
               style={{
@@ -111,10 +111,10 @@ function CaseStudies() {
               </li>
             </ul>
           </div>
-        </ProjectTOC> */}
+        </ProjectTOC>
 
         <SupplementalProjTOC>
-          {/* <h4>Project Walkthroughs</h4> */}
+          <h4>Project Walkthroughs</h4>
           <ul>
             <li>
               <Link to="/oldest-restos">

@@ -11,7 +11,7 @@ export const MainWrapper = styled("div", {
 
 export const ContentWrapper = styled("div", {
   // border: "2px solid pink",
-  height: "60vh",
+  height: "100%",
 
   "@media screen and (min-width: 768px)": {
     margin: "6rem",

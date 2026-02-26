@@ -24,7 +24,7 @@ const Topper = () => {
             </Headline>
           </HedWrapper>
           <Subheadline>
-            I am a multidisciplinary designer with experience in <a href="/#project" onClick={() => {jump('#project')}}>front-end development</a>, digital design, <Link to='/print'>print design</Link> and <Link to='/illos'>illustration</Link>.
+            I am a multidisciplinary designer with experience in <a href="/#/#project" onClick={() => {jump('#project')}}>front-end development</a>, digital design, <Link to='/print'>print design</Link> and <Link to='/illos'>illustration</Link>.
           </Subheadline>
         </ContentWrapper>
       </MainWrapper>
