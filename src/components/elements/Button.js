@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-function Button({ link }) {
+function Button({ link, buttonCTA, color, border, textColor, icon, hoverColor, hoverText}) {
   const ButtonWrapper = styled.div({
     width: "fit-content",
     // border: '2px solid red',
@@ -12,8 +12,9 @@ function Button({ link }) {
   });
 
   const Button = styled.div({
-    backgroundColor: "#006894",
-    color: "#fff",
+    backgroundColor: color || "#006894",
+    border: border || '',
+    color:  textColor || "#fff",
     width: "fit-content",
     padding: "0.4rem 0.75rem 0.4rem 0.75rem",
     borderRadius: "1.5rem",
@@ -22,7 +23,7 @@ function Button({ link }) {
       fontFamily: "Helvetica Neue",
       fontWeight: "bold",
       fontSize: "12px",
-      color: "#fff",
+      color: textColor || "#fff",
       marginBottom: "0",
       marginTop: "0",
     //   lineHeight: "0",
@@ -35,13 +36,22 @@ function Button({ link }) {
     "@media screen and (max-width: 767px)": {
       marginBottom: "1.5rem",
     },
+    
+    '&:hover': {
+      backgroundColor: '#4f7c8f',
+      p: {
+      color: hoverText || ''
+
+      }
+    }
   });
+
   return (
     <ButtonWrapper>
       <a target="_blank" href={`${link}`}>
         <Button>
-          <p>Link to story</p>
-          <FontAwesomeIcon icon={faArrowRight} />
+          <p>{buttonCTA || 'View story'}</p>
+          {icon != 'noIcon' && <FontAwesomeIcon icon={faArrowRight} />}
         </Button>
       </a>
     </ButtonWrapper>

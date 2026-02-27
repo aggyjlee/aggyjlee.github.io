@@ -11,7 +11,7 @@ import {
   ProjectMessage,
   Tooltip,
   TooltipText,
-  ProjMsgDesktop
+  ProjMsgDesktop,
 } from "./index.stitches";
 import Button from "../elements/Button";
 import data from "../../data/project.json";
@@ -26,16 +26,21 @@ function ProjectGrid() {
       <ContentWrapper>
         <ProjectMessage>
           <h3>Selected Work</h3>
-          <ProjMsgDesktop
-          >
-            <span>Whenever possible, gift links are provided. Getting a
-              paywall?{" "}</span>
+          <ProjMsgDesktop>
+            <span>
+              Whenever possible, gift links are provided. Getting a
+              paywall?{" "}
+            </span>
             <Tooltip>
               <FontAwesomeIcon icon={faInfoCircle} />
               <TooltipText>
                 <p>Gift log-in credentials</p>
-                <p>user:<span> ajlportfolio2026@gmail.com</span></p>
-                <p>pw: <span>viewmywork!</span></p>
+                <p>
+                  user:<span> ajlportfolio2026@gmail.com</span>
+                </p>
+                <p>
+                  pw: <span>viewmywork!</span>
+                </p>
               </TooltipText>
             </Tooltip>
           </ProjMsgDesktop>
@@ -43,16 +48,57 @@ function ProjectGrid() {
         {data.map((item, i) => {
           return (
             <ProjectModule key={i}>
-              <Image>
-                <img src={`/thumbnails/${item[4]}`} alt="project thumbnail" />
-              </Image>
+              <div>
+                {i == 1 ? (
+                  <Link
+                    to={"/oldest-restos"}
+                    style={{
+                      position: "relative",
+                      left: "calc(100% - 90px)",
+                      top: "-20px",
+                    }}
+                  >
+                    <img
+                      src={"/gg.png"}
+                      style={{
+                        position: "absolute",
+                        zIndex: "1",
+                        width: "100px",
+                        height: "auto",
+                        transform: "rotate(-10deg)",
+                      }}
+                      className={"stamp-rotation"}
+                    />
+                  </Link>
+                ) : (
+                  ""
+                )}
+                <Image>
+                  <img src={`/thumbnails/${item[4]}`} alt="project thumbnail" />
+                </Image>
+              </div>
               <ProjectContentWrapper>
                 <p>
                   {i + 1}/{data.length}
                 </p>
                 <h3>{item[0]}</h3>
 
-                <Button link={item[1]} />
+                <div style={{ display: "flex", gap: "0.5rem" }}>
+                  <Button link={item[1]} icon={true} />
+                  {i == 1 && (
+                    <Button
+                      link={'#/oldest-restos'}
+                      color={"#fff"}
+                      textColor={"#000"}
+                      border={"1px solid #006894"}
+                      hoverText={"#fff"}
+                      hoverColor={'#006894'}
+                      buttonCTA={"Learn more!"}
+                      icon={"noIcon"}
+                    />
+                  )}
+                </div>
+
                 <Descriptor>
                   <span>{item[2] + " |"}</span>
                   {" " + item[3]}

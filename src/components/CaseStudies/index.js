@@ -8,108 +8,63 @@ import ProjectTop from "../elements/ProjectTop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import CaseStudyBlock from "./CaseStudyBlock";
+import styled from "styled-components";
 
 function CaseStudies() {
+  const Divider = styled.div({
+    borderTop: "1px solid #006894",
+  });
+
   return (
     <MainWrapper>
       <ContentWrapper>
         <ProjectTop
-          hed="Case Studies"
-          overview="Throughout my career, I have grown comfortable with simultanously balancing various responsibilties: front-end developer, UX designer and project manager – to name just a few. For select projects, here are case studies that go into more detail about my roles and design processes."
+          hed="Digital Design: Case Studies"
+          overview="Throughout my career, I have grown comfortable with balancing various responsibilties: front-end developer, UX designer and project manager to name just a few. For select projects, here are case studies that go into more detail about my roles and design processes."
         />
         <ProjectTOC>
-          <div>
-            <ul
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(2, 1fr)",
-                gap: "4rem",
-              }}
-            >
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              flexDirection: "column",
+              gap: "3rem",
+            }}
+          >
+            <CaseStudyBlock
+              link={"/yip-2025"}
+              caseHed={
+                "Redesigning an annual package with a mobile-first photo feature"
+              }
+              timeline={"November - December 2025"}
+              role={"Development, UX Design, Collaboration"}
+              projName={"oldestrestos.jpg"}
+            />
+            <Divider />
+            <CaseStudyBlock
+              link={"/vets-series"}
+              caseHed={
+                "Increasing video engagement and creating a robust design system"
+              }
+              timeline={"March - November 2025"}
+              role={
+                "Development, UX Design, Series Design, Figma, Project Management, Collaboration"
+              }
+              projName={"vets.jpg"}
+            />
+            <Divider />
 
-
-              <li>
-                <Link to="/yip-2025">
-                  <span>
-                    Redesigning an annual photo story with a mobile-first photo
-                    feature |
-                  </span>{" "}
-                  Year In Photos 2025 <FontAwesomeIcon icon={faArrowRight} />
-                </Link>
-                <div
-                  style={{
-                    border: "2px solid pink",
-                    height: "300px",
-                    width: "100%",
-                    borderRadius: "1rem",
-                    marginTop: "1rem",
-                    marginBottom: "1rem",
-                  }}
-                ></div>
-                Role: sdjksjdks Timeline: nsdjnsjdns
-              </li>
-              <li>
-                <Link to="/series-vets">
-                  <span>
-                    Increasing video engagement and creating a robust design
-                    system for a story series |
-                  </span>{" "}
-                  Veterans Inc. <FontAwesomeIcon icon={faArrowRight} />
-                </Link>
-                <div
-                  style={{
-                    border: "2px solid pink",
-                    height: "300px",
-                    width: "100%",
-                    borderRadius: "1rem",
-                    marginTop: "1rem",
-                    marginBottom: "1rem",
-                  }}
-                ></div>
-                Role: sdjksjdks Timeline: nsdjnsjdns
-              </li>
-              <li>
-                <Link to="/2024-policy-pages">
-                  <span>
-                    Organizing information for election policy pages |
-                  </span>{" "}
-                  2024 Presidential Election{" "}
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </Link>
-                <div
-                  style={{
-                    border: "2px solid pink",
-                    height: "300px",
-                    width: "100%",
-                    borderRadius: "1rem",
-                    marginTop: "1rem",
-                    marginBottom: "1rem",
-                  }}
-                ></div>
-                Role: sdjksjdks Timeline: nsdjnsjdns
-              </li>
-              <li>
-                <Link to="/parking-ux">
-                  <span>
-                    {" "}
-                    Improving the parking experience in major cities |
-                  </span>{" "}
-                  Northwestern Bay Area Immersion Program{" "}
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </Link>
-                <div
-                  style={{
-                    border: "2px solid pink",
-                    height: "300px",
-                    width: "100%",
-                    borderRadius: "1rem",
-                    marginTop: "1rem",
-                    marginBottom: "1rem",
-                  }}
-                ></div>
-                Role: sdjksjdks Timeline: nsdjnsjdns
-              </li>
-            </ul>
+            <CaseStudyBlock
+              link={"/policy-pages"}
+              caseHed={
+                "Organizing information for the 2024 Election Policy Pages"
+              }
+              timeline={"July - November 2023"}
+              role={"UX Design, Figma, Development, Collaboration"}
+              projName={"policy-pages.jpg"}
+            />
+            <Divider />
           </div>
         </ProjectTOC>
 
@@ -120,6 +75,12 @@ function CaseStudies() {
               <Link to="/oldest-restos">
                 Leading development in a design collaboration for the{" "}
                 <span>Oldest Restaurants</span> package{" "}
+                <FontAwesomeIcon icon={faArrowRight} />
+              </Link>
+            </li>
+            {/* <li>
+              <Link to="/apple-news">
+                Converting digital stories to be compatible with the <span>Apple News</span> platform{" "}
                 <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </li>
@@ -143,7 +104,7 @@ function CaseStudies() {
                 about <span>Abortion Pills</span>
                 <FontAwesomeIcon icon={faArrowRight} />
               </Link>
-            </li>
+            </li> */}
           </ul>
         </SupplementalProjTOC>
       </ContentWrapper>

@@ -54,9 +54,15 @@ function FrontHalf() {
           </ModNote>
           <AboutMod>
             {/* <span>Current faves:</span> */}
-            <div>
+            <div style={{p: {margin: '0'}}}>
+              <p>
               The stamp logo for my website is a play on the "참 잘했어요 (Good
-              Job)!" stamp used in Korean elementary schools. 
+              Job)!" stamp used in Korean elementary schools. </p>
+              
+              <p>Make sure to click
+              
+              the projects that have this stamp to learn more about what gave it
+              the stamp of approval!</p>
               {/* {aboutModText.map((item, i) => {
                     return <div key={i}>{item}</div>;
                   })} Make sure to click

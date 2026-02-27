@@ -59,5 +59,6 @@ export const SupplementalProjTOC = styled("div", {
     fontWeight: "normal",
     fontSize: "25px",
     marginBottom: "0px",
+    marginTop: '4rem'
   },
 });

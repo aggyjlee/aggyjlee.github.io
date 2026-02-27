@@ -88,7 +88,7 @@ export const AboutMod = styled("div", {
     marginBottom: "0.5rem",
   },
   div: {
-    marginBottom: "1rem",
+    // marginBottom: "1rem",
   },
 });
 

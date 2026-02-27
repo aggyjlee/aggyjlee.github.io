@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, ScrollRestoration } from "react-router-dom";
 import "@fontsource/source-serif-4";
 import About from "./components/About";
 import FirstPager from "./FirstPager";
