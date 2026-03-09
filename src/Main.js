@@ -12,6 +12,11 @@ import AbortionPills from "./components/projects/AbortionPills.js";
 import DeathRow from "./components/projects/DeathRow.js";
 import OldestRestos from "./components/projects/OldestRestos.js";
 import ShiftingFrontiers from "./components/projects/ShiftingFrontiers.js";
+import YearInPhotos from "./components/projects/YearInPhotos.js";
+import Vets from "./components/projects/Vets.js";
+import PolicyPages from "./components/projects/PolicyPages.js";
+
+
 
 function Main() {
   return (
@@ -23,6 +28,9 @@ function Main() {
         <Route path="/illos" element={<Illos />} />
         <Route path="/media-design" element={<MediaDesign />} />
         <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/year-in-photos" element={<YearInPhotos />} />
+        <Route path="/vets-series" element={<Vets />} />
+        <Route path="/policy-pages" element={<PolicyPages />} />
         <Route path="/pills-interactive" element={<AbortionPills />} />
         <Route path="/oldest-restos" element={<OldestRestos />} />
         <Route path="/shifting-frontiers" element={<ShiftingFrontiers />} />

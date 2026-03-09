@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Button from "../elements/Button";
 import styled from "styled-components";
 
-function CaseStudyBlock({ link, caseHed, timeline, role, projName }) {
+function CaseStudyBlock({ link, caseHed, timeline, role, projName, ready }) {
   const BlockWrapper = styled.div({
     // border: '2px solid red',
 
@@ -18,7 +18,7 @@ function CaseStudyBlock({ link, caseHed, timeline, role, projName }) {
     },
     "@media only screen and (max-width: 767px)": {
       display: "flex",
-      flexDirection: 'column-reverse',
+      flexDirection: "column-reverse",
       gap: "1.5rem",
     },
   });
@@ -42,8 +42,7 @@ function CaseStudyBlock({ link, caseHed, timeline, role, projName }) {
     },
   });
 
-  const ImageContainer = styled.div({
-  });
+  const ImageContainer = styled.div({});
 
   const CaseHed = styled.h3({
     color: "#006894",
@@ -56,35 +55,68 @@ function CaseStudyBlock({ link, caseHed, timeline, role, projName }) {
     },
   });
 
-  return (
-    <BlockWrapper>
-      <div>
-        {/* <Link to={`${link}`}> */}
-        <LeftContent>
-          <CaseHed style={{}}>{caseHed}</CaseHed> <p>{timeline}</p>
-          <p>{role}</p>
-          <p style={{ fontStyle: "italic" }}>Work in progress.. coming soon!</p>
-          {/* <Button buttonCTA={"View case study"} link={`${link}`} /> */}
-        </LeftContent>
-        {/* </Link> */}
-      </div>
-      {/* <a href={`/#${link}`}> */}
-      <ImageContainer>
-        <img
-          src={`/mocks/${projName}`}
-          alt={"hi"}
-          style={{
-            width: "100%",
-            height: "auto",
-            // border: '2px solid red',
-            borderRadius: "0.25rem",
-            filter: "drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.05))",
-          }}
-        />
-      </ImageContainer>
-      {/* </a> */}
-    </BlockWrapper>
-  );
+  if (!ready) {
+    return (
+      <BlockWrapper>
+        <div>
+          {/* <Link to={`${link}`}> */}
+          <LeftContent>
+            <CaseHed style={{}}>{caseHed}</CaseHed> <p>{timeline}</p>
+            <p>{role}</p>
+            <p style={{ fontStyle: "italic" }}>
+              Work in progress.. coming soon!
+            </p>
+            {/* <Button buttonCTA={"View case study"} link={`${link}`} /> */}
+          </LeftContent>
+          {/* </Link> */}
+        </div>
+        {/* <a href={`/#${link}`}> */}
+        <ImageContainer>
+          <img
+            src={`/mocks/${projName}`}
+            alt={"hi"}
+            style={{
+              width: "100%",
+              height: "auto",
+              // border: '2px solid red',
+              borderRadius: "0.25rem",
+              filter: "drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.05))",
+            }}
+          />
+        </ImageContainer>
+        {/* </a> */}
+      </BlockWrapper>
+    );
+  } else {
+    return (
+      <BlockWrapper>
+
+          <Link to={`${link}`}>
+          <LeftContent>
+            <CaseHed style={{}}>{caseHed}</CaseHed> <p>{timeline}</p>
+            <p>{role}</p>
+            <Button buttonCTA={"View case study"} link={`${link}`} />
+          </LeftContent>
+          </Link>
+
+        <a href={`/#${link}`}>
+        <ImageContainer>
+          <img
+            src={`/mocks/${projName}`}
+            alt={"hi"}
+            style={{
+              width: "100%",
+              height: "auto",
+              // border: '2px solid red',
+              borderRadius: "0.25rem",
+              filter: "drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.05))",
+            }}
+          />
+        </ImageContainer>
+        </a>
+      </BlockWrapper>
+    )
+  }
 }
 
 export default CaseStudyBlock;

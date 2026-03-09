@@ -9,7 +9,7 @@ function ProjectChunk({ header, text, imageArray, sections, mobileSrc }) {
       display: "grid",
       gridTemplateColumns: "40% 40%",
       gap: "20%",
-          marginTop: "6rem",
+      marginTop: "6rem",
     },
   });
 

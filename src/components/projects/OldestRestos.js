@@ -29,7 +29,7 @@ function OldestRestos() {
     [
       "/oldestrestos-mockup2.png",
       "Screengrab of a collection of Figma mockups",
-      "Figma mockups where we explore collapsible organization",
+      "Figma mockups where we explored collapsible organization",
     ],
   ];
 

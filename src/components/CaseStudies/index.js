@@ -33,13 +33,14 @@ function CaseStudies() {
             }}
           >
             <CaseStudyBlock
-              link={"/yip-2025"}
+              link={"/year-in-photos"}
               caseHed={
                 "Redesigning an annual package with a mobile-first photo feature"
               }
               timeline={"November - December 2025"}
               role={"Development, UX Design, Collaboration"}
-              projName={"oldestrestos.jpg"}
+              projName={"yip2025.jpg"}
+              ready={true}
             />
             <Divider />
             <CaseStudyBlock
