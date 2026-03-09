@@ -65,6 +65,13 @@ export const ProjChunkText = styled("p", {
 
 export const ParaWrapper = styled("div", {
   //   border: "2px solid blue",
+      a: {
+      color: "#006894",
+      fontWeight: "bold",
+    },
+    "a:hover": {
+      color: "#4f7c8f",
+    },
   fontFamily: "Helvetica Neue",
   variants: {
     header: {
@@ -79,6 +86,10 @@ export const ParaWrapper = styled("div", {
   ul: {
     margin: "0",
     paddingLeft: "1rem",
+    marginBottom: '1rem'
+  },
+  li: {
+    '& p': {marginBottom: '0.25rem !important'}
   },
   "@media only screen and (min-width: 768px)": {},
 });

@@ -21,6 +21,24 @@ import { CiCircleInfo } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
 function ProjectGrid() {
+  const isCaseStudy = (index) => {
+    if (index == 0) {
+      return "Read case study";
+    } else if (index == 3) {
+      return "Read case study";
+    } else if (index == 1) {
+      return "Learn more";
+    } else if (index == 2) {
+      return "Learn more";
+    } else if (index == 4) {
+      return "Learn more";
+    } else if (index == 5) {
+      return "Learn more";
+    } else {
+      return "";
+    }
+  };
+
   return (
     <MainWrapper id={"project"}>
       <ContentWrapper>
@@ -48,35 +66,10 @@ function ProjectGrid() {
         {data.map((item, i) => {
           return (
             <ProjectModule key={i}>
-              <div>
-                {i == 1 ? (
-                  <Link
-                    to={"/oldest-restos"}
-                    style={{
-                      position: "relative",
-                      left: "calc(100% - 90px)",
-                      top: "-20px",
-                    }}
-                  >
-                    <img
-                      src={"/gg.png"}
-                      style={{
-                        position: "absolute",
-                        zIndex: "1",
-                        width: "100px",
-                        height: "auto",
-                        transform: "rotate(-10deg)",
-                      }}
-                      className={"stamp-rotation"}
-                    />
-                  </Link>
-                ) : (
-                  ""
-                )}
-                <Image>
-                  <img src={`/thumbnails/${item[4]}`} alt="project thumbnail" />
-                </Image>
-              </div>
+              <Image>
+                <img src={`/thumbnails/${item[4]}`} alt="project thumbnail" />
+              </Image>
+
               <ProjectContentWrapper>
                 <p>
                   {i + 1}/{data.length}
@@ -85,15 +78,15 @@ function ProjectGrid() {
 
                 <div style={{ display: "flex", gap: "0.5rem" }}>
                   <Button link={item[1]} icon={true} />
-                  {i == 1 && (
+                  {isCaseStudy(i) && (
                     <Button
-                      link={'#/oldest-restos'}
+                      link={`${item[5]}`}
                       color={"#fff"}
                       textColor={"#000"}
                       border={"1px solid #006894"}
                       hoverText={"#fff"}
-                      hoverColor={'#006894'}
-                      buttonCTA={"Learn more!"}
+                      hoverColor={"#006894"}
+                      buttonCTA={`${isCaseStudy(i)}`}
                       icon={"noIcon"}
                     />
                   )}

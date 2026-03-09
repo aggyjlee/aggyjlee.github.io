@@ -5,10 +5,10 @@ import {
   ContentBlock,
 } from "../Print/index.stitches";
 import ProjectTop from "../elements/ProjectTop";
-import ProjectMainVideo from "../elements/ProjectMainVideo";
+import Image from "../elements/Image";
 import ProjectChunk from "../elements/ProjectChunk";
 
-function ShiftingFrontiers() {
+function AppleNews() {
   const text = [
     "To create the general visual direction of the project, Marissa and I looked at previous food stories from the Post and by other publications. We knew Tom would be featuring around 5-6 restaurants with each having its own photography, so we were worried about how much the reader would have to scroll and how to best package the information; therefore, we made sure to research how other stories handled this issue.",
     "While I was assigned to be the lead developer and Marissa was the print designer, the two of us worked on mockups separately first and then discussed together what we liked from each version. Marissa came with a very elegant design with great typography, so I was a big proponent of going in her design direction. At this point, we saw some of Tom's copy – seeing that the text length was quite substantial, we decided on keeping text collapsed within each restaurant section.",
@@ -54,24 +54,26 @@ function ShiftingFrontiers() {
     <MainWrapper>
       <ContentWrapper>
         <ProjectTop
-          hed={"Shifting Frontiers Photo Essay Design"}
+          hed={"Apple News Conversions"}
           hedWidth={"30rem"}
-          date={"December 2024 - March 2025"}
-          role={"Developer/Designer"}
+          date={"Various dates from 2022-2024"}
+          role={"Developer (Using News Preview, Apple News CMS)"}
           button={true}
-          link={"https://wapo.st/3ZSjYRN"}
+          link={"https://apple.news/AX1baQZ_bSm667CvvgvrlrA"}
           overview={
-            "Washington Post photographer Matt McClain travelled around the West to photograph the changing landscape and culture of five states in the area. Due to all of Matt’s amazing photography, I wanted to find a way to present as many photos as possible while also capturing the fleeting nature of the West."
+            "The Post had an internal template and CMS that allowed us to convert our digital stories for the Apple News platform. Only a small team of me and two other designers (out of 50) was familiar with this workflow. I joined digital projects close to the digital publication date to work with the project’s designer and begin the conversion process for the platform that tends to be more mobile-friendly. "
           }
         />
 
-        <ProjectMainVideo
-          src={
-            "https://ajl-portfolio-2026.s3.us-east-2.amazonaws.com/shifting-mockup.mp4"
-          }
-          // projName={"oldestrestos"}
-          // alt={`Mockup of an iPhone and Macbook screen that shows a screengrab of a man eating a dish from Washington Post's Oldest Restaurant story`}
-        />
+        <div>
+          <Image
+            src={
+              "./mocks/applenews.jpg"
+            }
+            // projName={"oldestrestos"}
+            // alt={`Mockup of an iPhone and Macbook screen that shows a screengrab of a man eating a dish from Washington Post's Oldest Restaurant story`}
+          />
+        </div>
         {/* <ProjectChunk
           header={"Process"}
           text={text}
@@ -86,4 +88,4 @@ function ShiftingFrontiers() {
   );
 }
 
-export default ShiftingFrontiers;
+export default AppleNews;

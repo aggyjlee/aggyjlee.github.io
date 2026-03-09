@@ -95,7 +95,7 @@ function CaseStudyBlock({ link, caseHed, timeline, role, projName, ready }) {
           <LeftContent>
             <CaseHed style={{}}>{caseHed}</CaseHed> <p>{timeline}</p>
             <p>{role}</p>
-            <Button buttonCTA={"View case study"} link={`${link}`} />
+            <Button buttonCTA={"Read case study"} link={`${link}`} />
           </LeftContent>
           </Link>
 

@@ -70,7 +70,7 @@ function ProjectTop({
       <div>
         <h3 style={{ maxWidth: `${hedWidth || ""}` }}>{hed}</h3>
         <p>{date}</p>
-        <p>{role}</p>
+        <p style={{ maxWidth: `${hedWidth || ""}` }}>{role}</p>
         {button ? <Button link={link} /> : ""}
       </div>
       <RightDiv>

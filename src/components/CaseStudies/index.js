@@ -37,7 +37,7 @@ function CaseStudies() {
               caseHed={
                 "Redesigning an annual package with a mobile-first photo feature"
               }
-              timeline={"November - December 2025"}
+              timeline={"November 2025 - December 2025"}
               role={"Development, UX Design, Collaboration"}
               projName={"yip2025.jpg"}
               ready={true}
@@ -48,11 +48,12 @@ function CaseStudies() {
               caseHed={
                 "Increasing video engagement and creating a robust design system"
               }
-              timeline={"March - November 2025"}
+              timeline={"March 2025 - November 2025"}
               role={
                 "Development, UX Design, Series Design, Figma, Project Management, Collaboration"
               }
               projName={"vets.jpg"}
+              ready={true}
             />
             <Divider />
 
@@ -61,7 +62,7 @@ function CaseStudies() {
               caseHed={
                 "Organizing information for the 2024 Election Policy Pages"
               }
-              timeline={"July - November 2023"}
+              timeline={"July 2023 - November 2023"}
               role={"UX Design, Figma, Development, Collaboration"}
               projName={"policy-pages.jpg"}
             />
@@ -79,7 +80,7 @@ function CaseStudies() {
                 <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link to="/apple-news">
                 Converting digital stories to be compatible with the <span>Apple News</span> platform{" "}
                 <FontAwesomeIcon icon={faArrowRight} />
@@ -101,11 +102,11 @@ function CaseStudies() {
             </li>
             <li>
               <Link to="/pills-interactive">
-                Balancing sensitivity with strong visuals for this moving piece
+                Balancing sensitivity for this moving piece
                 about <span>Abortion Pills</span>
                 <FontAwesomeIcon icon={faArrowRight} />
               </Link>
-            </li> */}
+            </li>
           </ul>
         </SupplementalProjTOC>
       </ContentWrapper>

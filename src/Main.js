@@ -15,6 +15,7 @@ import ShiftingFrontiers from "./components/projects/ShiftingFrontiers.js";
 import YearInPhotos from "./components/projects/YearInPhotos.js";
 import Vets from "./components/projects/Vets.js";
 import PolicyPages from "./components/projects/PolicyPages.js";
+import AppleNews from "./components/projects/AppleNews.js";
 
 
 
@@ -35,6 +36,7 @@ function Main() {
         <Route path="/oldest-restos" element={<OldestRestos />} />
         <Route path="/shifting-frontiers" element={<ShiftingFrontiers />} />
         <Route path="/dr-interactive" element={<DeathRow />} />
+        <Route path="/apple-news" element={<AppleNews />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>
