@@ -59,7 +59,7 @@ function DeathRow() {
           date={"September 2024 - November 2024"}
           role={"Developer/Designer"}
           button={true}
-          link={"https://wapo.st/4u0S7wG"}
+          link={"https://wapo.st/4sLB0NE"}
           overview={
             "As I gained more experience creating narrative, conceptual toppers, I joined this investigative piece examining death row in the United States for its topper potential. This story also didn’t have many photographs, so I was tasked with creating the story page design and design concept. I designed an ambitious topper that named all 4000 people on death row before narrowing it down to the main subject of the story."
           }

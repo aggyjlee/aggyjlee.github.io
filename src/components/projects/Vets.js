@@ -72,7 +72,7 @@ function Vets() {
             "Development, UX Design, Series Design, Figma, Project Management, Collaboration"
           }
           button={true}
-          link={"https://wapo.st/3ZZks8H"}
+          link={"https://wapo.st/4sbMuKx"}
           overview={
             "This was a four-part investigative series that looked at fraud within a government agency. The reporting had been in the works for over two years, and countless FOIAs were submitted to receive social media posts and surveillance footage from court documents."
           }

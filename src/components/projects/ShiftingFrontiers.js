@@ -59,7 +59,7 @@ function ShiftingFrontiers() {
           date={"December 2024 - March 2025"}
           role={"Developer/Designer"}
           button={true}
-          link={"https://wapo.st/3ZSjYRN"}
+          link={"https://wapo.st/4ru2WVv"}
           overview={
             "Washington Post photographer Matt McClain travelled around the West to photograph the changing landscape and culture of five states in the area. Due to all of Matt’s amazing photography, I wanted to find a way to present as many photos as possible while also capturing the fleeting nature of the West."
           }

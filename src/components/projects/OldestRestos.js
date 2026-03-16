@@ -58,7 +58,7 @@ function OldestRestos() {
           date={"October 2025 - February 2026"}
           role={"Lead developer, Designer"}
           button={true}
-          link={"https://wapo.st/4sfS5iN"}
+          link={"https://wapo.st/4bp7oyx"}
           overview={
             "The Post's longtime food critic Tom Sietsema was stepping down from his role after 25 years. His story on some of the oldest restaurants in the U.S. was his final piece for the Post and was set to publish a few months after his announcement. To bring this package to life, I collaborated with designer Marissa Vonesh, who took charge of the print product and mockups."
           }
