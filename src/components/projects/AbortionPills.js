@@ -55,7 +55,7 @@ function AbortionPills() {
       <ContentWrapper>
         <ProjectTop
           hed={"Abortion Pills Story Page Design"}
-          hedWidth={"30rem"}
+          // hedWidth={"30rem"}
           date={"February 2024 - April 2024"}
           role={"Developer/Designer"}
           button={true}

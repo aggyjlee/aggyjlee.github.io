@@ -74,7 +74,7 @@ function CaseStudyBlock({ link, caseHed, timeline, role, projName, ready }) {
         <ImageContainer>
           <img
             src={`/mocks/${projName}`}
-            alt={"hi"}
+            alt={"Mockup of project"}
             style={{
               width: "100%",
               height: "auto",
@@ -103,7 +103,7 @@ function CaseStudyBlock({ link, caseHed, timeline, role, projName, ready }) {
         <ImageContainer>
           <img
             src={`/mocks/${projName}`}
-            alt={"hi"}
+            alt={"Mockup of project"}
             style={{
               width: "100%",
               height: "auto",

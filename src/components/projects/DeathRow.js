@@ -55,7 +55,7 @@ function DeathRow() {
       <ContentWrapper>
         <ProjectTop
           hed={"Death Row Story Page Design"}
-          hedWidth={"30rem"}
+          // hedWidth={"30rem"}
           date={"September 2024 - November 2024"}
           role={"Developer/Designer"}
           button={true}

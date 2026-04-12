@@ -68,7 +68,7 @@ function YearInPhotos() {
           date={"November 2025 - December 2025"}
           role={"Lead developer, Designer"}
           button={true}
-          link={"https://wapo.st/4rRMcYx"}
+          link={"https://wapo.st/4ckwdMu"}
           overview={
             "Year In Photos is a print and digital package that publishes in December with a round up of the year’s best photography that best represents the major news events of that year. The digital story can range from a presentation of 80 to 100 photos. "
           }
@@ -109,7 +109,6 @@ function YearInPhotos() {
                 />
 
                 <ProjChunkText
-                  css={"blue"}
                   dangerouslySetInnerHTML={{
                     __html:
                       "How can we create a more native mobile experience for a visuals-heavy package like Year In Photos?",
@@ -251,7 +250,6 @@ function YearInPhotos() {
                   />
 
                   <ProjChunkText
-                    css={"blue"}
                     dangerouslySetInnerHTML={{
                       __html:
                         "Ultimately, we decided to go ahead with the first option – we felt the drag feature would create a higher barrier of entry and cause readers to spend too much time on each photo.",
