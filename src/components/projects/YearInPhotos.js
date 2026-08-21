@@ -68,7 +68,7 @@ function YearInPhotos() {
           date={"November 2025 - December 2025"}
           role={"Lead developer, Designer"}
           button={true}
-          link={"https://wapo.st/4ewcJqJ"}
+          link={"https://wapo.st/45FuoXK"}
           overview={
             "Year In Photos is a print and digital package that publishes in December with a round up of the year’s best photography that best represents the major news events of that year. The digital story can range from a presentation of 80 to 100 photos. "
           }

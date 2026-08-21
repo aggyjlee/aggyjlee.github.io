@@ -59,7 +59,7 @@ function AbortionPills() {
           date={"February 2024 - April 2024"}
           role={"Developer/Designer"}
           button={true}
-          link={"https://wapo.st/43X1ly8"}
+          link={"https://wapo.st/4cTP426"}
           overview={
             "The story involved a highly sensitive topic area, so there weren’t many photos to use of the individuals featured in the story. I was tasked with creating a story page design that would help break up the story copy and visualize the powerful writing by Caroline Kitchener."
           }
